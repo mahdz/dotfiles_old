@@ -121,12 +121,13 @@ cask google-chrome
 cask grammarly-desktop
 cask hyper
 cask iina
+cask iterm2
 cask karabiner-elements
 cask lastfm
 cask macfuse
 cask mimestream
 cask no-ip-duc
-cask onyx
+# cask onyx
 cask quicklook-csv
 cask quicklook-json
 cask raycast
