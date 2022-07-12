@@ -57,46 +57,46 @@ module.exports = {
     // 'box-sync',
     //'comicbooklover',
     //'diffmerge',
-    'docker', // docker for mac
+    //'docker', // docker for mac
     //'dropbox',
     //'evernote',
-    'flux',
-    'gpg-suite',
+    //'flux',
+    //'gpg-suite',
     //'ireadfast',
-    'iterm2',
-    'little-snitch',
+    //'iterm2',
+    //'little-snitch',
     // 'macbreakz',
-    'micro-snitch',
+    //'micro-snitch',
     // 'signal',
     //'macvim',
-    'sizeup',
+    //'sizeup',
     //'sketchup',
-    'slack',
+    //'slack',
     // 'the-unarchiver',
     //'torbrowser',
     //'transmission',
-    'visual-studio-code',
+    //'visual-studio-code',
     //'vlc',
-    'xquartz'
+    //'xquartz'
   ],
   gem: [
   ],
   npm: [
-    'antic',
-    'buzzphrase',
-    'eslint',
-    'instant-markdown-d',
+    //'antic',
+    //'buzzphrase',
+    //'eslint',
+    //'instant-markdown-d',
     // 'generator-dockerize',
     // 'gulp',
-    'npm-check-updates',
-    'prettyjson',
-    'trash',
-    'vtop'
+    //'npm-check-updates',
+    //'prettyjson',
+    //'trash',
+    //'vtop'
     // ,'yo'
   ],
   mas: [
     //com.apple.dt.Xcode (10.2.1)
-    '497799835',
+    //'497799835',
     //com.if.Amphetamine (4.1.6)
     //'937984704',
     //net.shinyfrog.bear (1.6.15)
