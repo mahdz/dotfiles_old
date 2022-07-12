@@ -147,19 +147,19 @@
 	AAAAGQAAAAAAAAAAAAAAAAAAANo=
 	</data>
 	<key>BackgroundAlphaInactive</key>
-	<real>0.5</real>
+	<real>0.84999999999999998</real>
 	<key>BackgroundBlur</key>
-	<real>0.5</real>
-	<key>BackgroundBlurInactive</key>
 	<real>0.25</real>
+	<key>BackgroundBlurInactive</key>
+	<real>0.14999999999999999</real>
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwTVSRudWxs0w0ODxARElVO
-	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAgMCAwLjExNzgzNjEwMjggMC4xNTE3MDI3
-	MzE4IDAuOQAQAoAC0hQVFhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5T
-	T2JqZWN0CBEaJCkyN0lMUVNXXWRqd36ho6Wqtb7GyQAAAAAAAAEBAAAAAAAAABkAAAAA
-	AAAAAAAAAAAAAADS
+	U1JHQlxOU0NvbG9yU3BhY2VWJGNsYXNzTxAhMCAwLjExNzgzNjEwMjggMC4xNTE3MDI3
+	MzE4IDAuOTUAEAKAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhO
+	U09iamVjdAgRGiQpMjdJTFFTV11kand+oqSmq7a/x8oAAAAAAAABAQAAAAAAAAAZAAAA
+	AAAAAAAAAAAAAAAA0w==
 	</data>
 	<key>BackgroundSettingsForInactiveWindows</key>
 	<true/>
