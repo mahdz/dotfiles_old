@@ -1,83 +1,143 @@
 module.exports = {
   brew: [
-    // http://conqueringthecommandline.com/book/ack_ag
-    'ack',
-    'ag',
+    'alerter',
+    'aom',
+    'apr',
+    'apr-util',
+    'autoconf',
     // https://github.com/wting/autojump
     'autojump',
-    // alternative to `cat`: https://github.com/sharkdp/bat
-    'bat',
+    'brotli',
+    'c-ares',
+    'ca-certificates',
+    'cairo',
     // Install GNU core utilities (those that come with macOS are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
     'dos2unix',
     // Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
     'findutils',
-    // 'fortune',
-    'fzf',
-    'readline', // ensure gawk gets good readline
-    'gawk',
-    // http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
-    'gifsicle',
-    'gnupg',
+    'exa',
+    'firefoxpwa',
+    'fontconfig',
+    'freetype',
+    'fribidi',
+    'gd',
+    'gdbm',
+    'gdk-pixbuf',
+    'gettext',
+    'gh',
+    'giflib',
+    'glib',
+    'gmp',
     // Install GNU `sed`, overwriting the built-in `sed`
     // so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
     'gnu-sed --with-default-names',
+    'go',
+    'gobject-introspection',
+    'graphite2',
+    'graphviz',
     // upgrade grep so we can get things like inverted match (-v)
     'grep --with-default-names',
     // better, more recent grep
     'homebrew/dupes/grep',
-    // https://github.com/jkbrzt/httpie
-    'httpie',
-    // jq is a sort of JSON grep
-    'jq',
-    // Mac App Store CLI: https://github.com/mas-cli/mas
-    'mas',
-    // Install some other useful utilities like `sponge`
-    'moreutils',
-    'nmap',
-    // 'openconnect',
-    'reattach-to-user-namespace',
-    // better/more recent version of screen
-    'homebrew/dupes/screen',
-    'tmux',
-    'todo-txt',
-    'tree',
-    'ttyrec',
-    // better, more recent vim
+    'gts',
+    'harfbuzz',
+    'icu4c',
+    'imath',
+    'jasper',
+    'jpeg',
+'jpeg-xl',
+'libavif',
+'libffi',
+'libnghttp2',
+'libpng',
+'libpthread-stubs',
+'librsvg',
+'libtiff',
+'libtool',
+'libuv',
+'libvmaf',
+'libx11',
+'libxau',
+'libxcb',
+'libxdmcp',
+'libxext',
+'libxrender',
+'lz4',
+'lzo',
+'m4',
+'mas',
+'mpdecimal',
+'ncurses',
+'netpbm',
+'node',
+'openexr',
+'openssl@1.1',
+'openssl@3',
+'pango',
+'pcre',
+'pixman',
+'pkg-config',
+'python@3.9',
+'readline',
+'six',
+'sqlite',
+'subversion',
+'terminal-notifier',
+'tree',
+'utf8proc',
+// better, more recent vim
     'vim --with-client-server --with-override-system-vi',
-    'watch',
-    // Install wget with IRI support
+'watch',
+'webp',
+// Install wget with IRI support
     'wget --enable-iri'
+'xorgproto',
+'xz',
+'zsh'
   ],
   cask: [
-    //'adium',
-    //'amazon-cloud-drive',
-    //'atom',
-    // 'box-sync',
-    //'comicbooklover',
-    //'diffmerge',
-    //'docker', // docker for mac
-    //'dropbox',
-    //'evernote',
-    //'flux',
-    //'gpg-suite',
-    //'ireadfast',
-    //'iterm2',
-    //'little-snitch',
-    // 'macbreakz',
-    //'micro-snitch',
-    // 'signal',
-    //'macvim',
-    //'sizeup',
-    //'sketchup',
-    //'slack',
-    // 'the-unarchiver',
-    //'torbrowser',
-    //'transmission',
-    //'visual-studio-code',
-    //'vlc',
-    //'xquartz'
+'adguard',
+'appcleaner',
+'betterdiscord-installer',
+'betterdisplay',
+'cardhop',
+'cheatsheet',
+'cirrus',
+'coteditor',
+'customshortcuts',
+'discord',
+'fig',
+'figma',
+'find-empty-folders',
+'firefox',
+'github',
+'google-chrome',
+'grammarly-desktop',
+'hyper',
+'iina',
+'iterm2',
+'karabiner-elements',
+'lastfm',
+'macfuse',
+'mimestream',
+'no-ip-duc',
+'onyx',
+'quicklook-csv',
+'quicklook-json',
+'raycast',
+'setapp',
+'signal',
+'silicon-info',
+'silnite',
+'spotify',
+'suspicious-package',
+'telegram',
+'veracrypt',
+'webpquicklook',
+'yt-music',
+'zoom'
   ],
   gem: [
   ],
@@ -91,19 +151,19 @@ module.exports = {
     //'npm-check-updates',
     //'prettyjson',
     //'trash',
-    //'vtop'
-    // ,'yo'
+    //'vtop',
+    //'yo'
   ],
   mas: [
-    //com.apple.dt.Xcode (10.2.1)
-    //'497799835',
-    //com.if.Amphetamine (4.1.6)
-    //'937984704',
-    //net.shinyfrog.bear (1.6.15)
-    //'1091189122',
-    //com.monosnap.monosnap (3.5.8)
-    //'540348655',
-    //com.app77.pwsafemac (4.17)
-    //'520993579',
+    //Actions
+    '1586435171',
+    //Cardpointers
+    '1472875808',
+    //Controller
+    '1198176727',
+    //Craft
+    '1487937127',
+    //Darkroom
+    '953286746'
   ],
 };
