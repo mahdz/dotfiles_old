@@ -21,3 +21,8 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 function precmd () {
   z --add "$(pwd -P)"
 }
+
+##############################################################################
+# Paths
+##############################################################################
+eval "$(/opt/homebrew/bin/brew shellenv)"
