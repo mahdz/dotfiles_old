@@ -61,13 +61,14 @@ brew ncurses
 brew netpbm
 brew node
 brew openexr
-brew openssl@1.1
-brew openssl@3
+brew openssl
+#brew openssl@1.1
+#brew openssl@3
 brew pango
 brew pcre
 brew pixman
 brew pkg-config
-brew python@3.9
+#brew python@3.9
 brew readline
 brew six
 brew sqlite
