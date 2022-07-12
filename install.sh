@@ -277,6 +277,12 @@ require_cask font-new-york
   ok
 fi
 
+read -r -p "Install packages from Brewfile? [y|N] " response
+if [[ $response =~ (y|yes|Y) ]]; then
+  bot "installing packages from Brewfile"
+  brew bundle --file ~/.Brewfile
+  ok
+fi
 
 # if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
 #   running "Fixing Ruby Gems Directory Permissions"
