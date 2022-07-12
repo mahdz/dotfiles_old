@@ -291,10 +291,10 @@ fi
 # fi
 
 # node version manager
-require_brew nvm
+#require_brew nvm
 
 # nvm
-require_nvm stable
+#require_nvm stable
 
 #####################################
 # Now we can switch to node.js mode

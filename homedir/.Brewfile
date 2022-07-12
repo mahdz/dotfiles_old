@@ -1,4 +1,3 @@
-
 # tap repositories and their packages
 
 tap homebrew/core
@@ -7,6 +6,8 @@ brew aom
 brew apr
 brew apr-util
 brew autoconf
+brew autojump
+brew berkeley-db
 brew brotli
 brew c-ares
 brew ca-certificates
@@ -52,6 +53,8 @@ brew libxcb
 brew libxdmcp
 brew libxext
 brew libxrender
+brew libyaml
+brew lua
 brew lz4
 brew lzo
 brew m4
@@ -61,20 +64,23 @@ brew ncurses
 brew netpbm
 brew node
 brew openexr
-brew openssl
-#brew openssl@1.1
-#brew openssl@3
+brew openssl@1.1
+brew openssl@3
+brew perl
 brew pango
 brew pcre
 brew pixman
 brew pkg-config
-#brew python@3.9
+brew python@3.10
+brew python@3.9
 brew readline
+brew ruby
 brew six
 brew sqlite
 brew subversion
 brew terminal-notifier
 brew utf8proc
+brew vim
 brew webp
 brew xorgproto
 brew xz

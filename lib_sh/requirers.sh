@@ -87,18 +87,18 @@ function require_npm() {
 
 function sourceNVM(){
     export NVM_DIR=~/.nvm
-    source $(brew --prefix nvm)/nvm.sh
+    source $HOME/.nvm/nvm.sh
 }
 
 function require_nvm() {
     mkdir -p ~/.nvm
-    cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
+    cp $HOME/.nvm/nvm-exec ~/.nvm/
     sourceNVM
     nvm install $1
     if [[ $? != 0 ]]; then
         action "installing nvm"
         require_brew nvm
-        . ~/.bashrc
+        . ~/.zshrc
         nvm install $1
     fi
     ok

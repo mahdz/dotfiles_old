@@ -93,7 +93,7 @@ module.exports = {
 'watch',
 'webp',
 // Install wget with IRI support
-    'wget --enable-iri'
+    'wget --enable-iri',
 'xorgproto',
 'xz',
 'zsh'

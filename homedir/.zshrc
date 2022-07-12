@@ -57,3 +57,8 @@ unsetopt correct
 
 # run fortune on new terminal :)
 # fortune
+
+# Wrap brew with file
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
