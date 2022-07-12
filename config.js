@@ -68,6 +68,7 @@ module.exports = {
 'lzo',
 'm4',
 'mas',
+'moreutils',
 'mpdecimal',
 'ncurses',
 'netpbm',
