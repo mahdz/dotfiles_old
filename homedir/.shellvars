@@ -1,5 +1,5 @@
 # Set vim as default editor (vi is the default otherwise)
-export EDITOR="vim"
+#export EDITOR="cot"
 bindkey -v
 
 #########################################################################
@@ -31,6 +31,6 @@ export NVM_DIR=~/.nvm
 #########################################################################
 # Brew File Settings
 #########################################################################
-export HOMEBREW_BREWFILE=~/.Brewfile
-export HOMEBREW_BREWFILE_APPSTORE=1
-export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
+#export HOMEBREW_BREWFILE=~/.Brewfile
+#export HOMEBREW_BREWFILE_APPSTORE=1
+#export HOMEBREW_CASK_OPTS="--appdir=$HOME/Applications"
