@@ -256,45 +256,36 @@ if [[ $response =~ (y|yes|Y) ]];then
   ./fonts/install.sh
   brew tap homebrew/cask-fonts
   require_brew svn #required for roboto
-  require_cask font-fontawesome
-  require_cask font-awesome-terminal-fonts
-  require_cask font-hack
-  require_cask font-inconsolata-dz-for-powerline
-  require_cask font-inconsolata-g-for-powerline
-  require_cask font-inconsolata-for-powerline
-  require_cask font-roboto-mono
-  require_cask font-roboto-mono-for-powerline
-  require_cask font-source-code-pro
-require_cask font-barlow
-require_cask font-barlow-condensed
-require_cask font-barlow-semi-condensed
-require_cask font-fira-code
-require_cask font-fira-code-nerd-font
-require_cask font-fira-mono-nerd-font
-require_cask font-fira-sans
-require_cask font-fira-sans-extra-condensed
-require_cask font-new-york
+  require_cask font-barlow
+  require_cask font-barlow-condensed
+  require_cask font-barlow-semi-condensed
+  require_cask font-fira-code
+  require_cask font-fira-code-nerd-font
+  require_cask font-fira-mono-nerd-font
+  require_cask font-fira-sans
+  require_cask font-fira-sans-extra-condensed
+  require_cask font-new-york
   ok
 fi
 
 read -r -p "Install packages from Brewfile? [y|N] " response
 if [[ $response =~ (y|yes|Y) ]]; then
   bot "installing packages from Brewfile"
-  brew bundle --file ~/.Brewfile
+  brew bundle --file ~/.config/brewfile/Brewfile
   ok
 fi
 
-# if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
-#   running "Fixing Ruby Gems Directory Permissions"
-#   sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
-#   ok
-# fi
+if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
+   running "Fixing Ruby Gems Directory Permissions"
+   sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
+   ok
+ fi
 
 # node version manager
 #require_brew nvm
 
 # nvm
-#require_nvm stable
+require_nvm stable
 
 #####################################
 # Now we can switch to node.js mode
