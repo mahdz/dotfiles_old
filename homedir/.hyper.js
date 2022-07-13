@@ -4,13 +4,36 @@
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
     config: {
+        hyperTabs: {
+        trafficButtons: true,
+        border: true,
+        tabIcons: true,
+        tabIconsColored: true,
+        activityColor: 'cyan',
+        closeAlign: 'right',
+    },
+    hypest: {
+        darkmode: true,
+        vibrancy: false, // macOS
+        borders: true,
+        accentColor: 'magenta'
+    },
+    hyperBorder: {
+        animate: {
+            duration: '18000',  // default is 18000
+        },
+        borderWidth: '4px'
+    },
+    opacity: 0.9,
+
+
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
         fontSize: 12,
         // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily: '"FiraCode Nerd Font", "Fira Code"',
         // default font weight: 'normal' or 'bold'
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
@@ -26,7 +49,7 @@ module.exports = {
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'BLOCK',
         // set to `true` (without backticks and without quotes) for blinking cursor
-        cursorBlink: false,
+        cursorBlink: true,
         // color of the text
         foregroundColor: '#fff',
         // terminal background color
@@ -101,11 +124,11 @@ module.exports = {
         // Supported Options:
         //  1. 'SOUND' -> Enables the bell as a sound
         //  2. false: turns off the bell
-        bell: 'SOUND',
+        bell: false,
         // An absolute file path to a sound file on the machine.
         // bellSoundURL: '/path/to/sound/file',
         // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
-        copyOnSelect: false,
+        copyOnSelect: true,
         // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
         defaultSSHApp: true,
         // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
@@ -122,7 +145,7 @@ module.exports = {
         // todo: does not pick up config changes automatically, need to restart terminal :/
         webLinksActivationKey: '',
         // if `false` (without backticks and without quotes), Hyper will use ligatures provided by some fonts
-        disableLigatures: true,
+        disableLigatures: false,
         // set to true to disable auto updates
         disableAutoUpdates: false,
         // set to true to enable screen reading apps (like NVDA) to read the contents of the terminal
@@ -137,11 +160,21 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: [],
+    plugins: [
+        "hyper-opacity",
+        "hyper-hypest",
+        "hypercwd",
+        "hyper-search",
+        "hyper-tab-icons",
+        "hyperborder",
+        "hyperalfred"
+    ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
-    localPlugins: [],
+    localPlugins: [
+  "fig-hyper-integration"
+],
     keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
