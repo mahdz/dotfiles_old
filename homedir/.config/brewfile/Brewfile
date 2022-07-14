@@ -21,6 +21,7 @@ brew flac
 brew fontconfig
 brew freetype
 brew fribidi
+brew fzf
 brew gd
 brew gdbm
 brew gdk-pixbuf
@@ -69,7 +70,6 @@ brew mpdecimal
 brew mpg123
 brew ncurses
 brew netpbm
-brew node
 brew openexr
 brew openssl@1.1
 brew openssl@3
@@ -88,6 +88,7 @@ brew sdl2_mixer
 brew sdl2_ttf
 brew six
 brew sqlite
+brew starship
 brew subversion
 brew terminal-notifier
 brew utf8proc
@@ -162,6 +163,7 @@ brew brew-file
 
 # App Store applications
 appstore 1586435171  Actions                        (1.13.0)
+appstore 1290358394  Cardhop                        (2.0.10)
 appstore 1472875808  CardPointers                   (3.4)
 appstore 1024640650  CotEditor                      (4.3.1)
 appstore 1487937127  Craft                          (2.2.4)
