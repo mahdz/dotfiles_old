@@ -2,7 +2,7 @@
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/.local/share/fig/plugins/ohmyzsh
+# export ZSH=$HOME/.local/share/fig/plugins/ohmyzsh
 
 # Set to this to use case-sensitive completion
 export CASE_SENSITIVE="true"
@@ -16,9 +16,9 @@ export CASE_SENSITIVE="true"
 # disable autosetting terminal title.
 export DISABLE_AUTO_TITLE="true"
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
-source $HOME/.nvm/nvm.sh
+# source $HOME/.nvm/nvm.sh --no-use
 
 autoload -U add-zsh-hook
 load-nvmrc() {
