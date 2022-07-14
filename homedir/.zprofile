@@ -24,10 +24,5 @@ function precmd () {
   z --add "$(pwd -P)"
 }
 
-##############################################################################
-# Paths
-##############################################################################
-#eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && . "$HOME/.fig/shell/zprofile.post.zsh"
