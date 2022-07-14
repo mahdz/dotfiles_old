@@ -32,9 +32,9 @@
   "homepage": "https://github.com/atomantic/dotfiles#readme",
   "dependencies": {
     "async.series": "0.5.2",
-    "inquirer": "6.2.2",
-    "node-emoji": "1.10.0",
-    "@snyk/protect": "^1.657.0"
+    "inquirer": "9.0.1",
+    "node-emoji": "1.11.0",
+    "@snyk/protect": "^1.972.0"
   },
   "snyk": true
 }

@@ -247,7 +247,6 @@ else
   ok "skipped. Install by running :PluginInstall within vim"
 fi
 
-
 read -r -p "Install fonts? [y|N] " response
 if [[ $response =~ (y|yes|Y) ]];then
   bot "installing fonts"
