@@ -143,6 +143,7 @@ cask no-ip-duc
 cask quicklook-csv
 cask quicklook-json
 cask raycast
+cask secretive
 cask setapp
 cask signal
 cask silnite

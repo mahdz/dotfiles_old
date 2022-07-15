@@ -22,3 +22,5 @@ export DISABLE_AUTO_TITLE="true"
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
+
+export SSH_AUTH_SOCK=/Users/manny/Library/Containers/org.hejki.osx.sshce.agent/Data/socket.ssh
