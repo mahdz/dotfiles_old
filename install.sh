@@ -724,11 +724,14 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 bot "Dock & Dashboard"
 ###############################################################################
 
+running "Show only active apps"
+defaults write com.apple.dock static-only -bool true;ok
+
 running "Enable highlight hover effect for the grid view of a stack (Dock)"
 defaults write com.apple.dock mouse-over-hilite-stack -bool true;ok
 
-running "Set the icon size of Dock items to 36 pixels"
-defaults write com.apple.dock tilesize -int 36;ok
+running "Set the icon size of Dock items to 42 pixels"
+defaults write com.apple.dock tilesize -int 42;ok
 
 running "Change minimize/maximize window effect to scale"
 defaults write com.apple.dock mineffect -string "scale";ok
@@ -750,13 +753,14 @@ defaults write com.apple.dock expose-animation-duration -float 0.1;ok
 
 running "Don’t group windows by application in Mission Control"
 # (i.e. use the old Exposé behavior instead)
-defaults write com.apple.dock expose-group-by-app -bool false;ok
+defaults write com.apple.dock expose-group-by-app -bool true;ok
 
 running "Don’t automatically rearrange Spaces based on most recent use"
 defaults write com.apple.dock mru-spaces -bool false;ok
 
 running "Remove the auto-hiding Dock delay"
 defaults write com.apple.dock autohide-delay -float 0;ok
+
 running "Remove the animation when hiding/showing the Dock"
 defaults write com.apple.dock autohide-time-modifier -float 0.5;ok
 

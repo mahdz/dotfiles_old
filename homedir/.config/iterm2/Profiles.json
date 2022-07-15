@@ -1,6 +1,7 @@
 {
 "Profiles": [
 {
+  "Badge Text" : "",
   "ASCII Ligatures" : true,
   "Working Directory" : "\/Users\/manny",
   "Prompt Before Closing 2" : 2,
@@ -53,6 +54,7 @@
   },
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
+  "Badge Font" : "FiraMonoNerdFontComplete-Bold",
   "Disable Window Resizing" : true,
   "Description" : "Default",
   "Close Sessions On End" : 2,
@@ -228,6 +230,8 @@
     "Green Component" : 0.16613791882991791
   },
   "BM Growl" : true,
+  "AWDS Window Directory" : "",
+  "Icon" : 1,
   "Ansi 3 Color" : {
     "Red Component" : 0.80126690864562988,
     "Color Space" : "Calibrated",
@@ -235,8 +239,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.53254079818725586
   },
-  "Icon" : 1,
   "Use Non-ASCII Font" : true,
+  "Shortcut" : "",
   "Link Color" : {
     "Red Component" : 0.7928692102432251,
     "Color Space" : "Calibrated",
@@ -244,7 +248,6 @@
     "Alpha Component" : 1,
     "Green Component" : 0.28100395202636719
   },
-  "Shortcut" : "",
   "Background Image Location" : "",
   "Bold Color" : {
     "Red Component" : 1,
@@ -255,6 +258,8 @@
   },
   "Unlimited Scrollback" : false,
   "Custom Command" : "Custom Shell",
+  "AWDS Tab Option" : "No",
+  "Title Components" : 66,
   "Keyboard Map" : {
 
   },
@@ -284,6 +289,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.18880486488342285
   },
+  "Badge Right Margin" : 10,
   "Use Bold Font" : true,
   "Silence Bell" : true,
   "Ansi 12 Color" : {
@@ -317,9 +323,10 @@
     "Alpha Component" : 1,
     "Green Component" : 0.05879192054271698
   },
-  "Name" : "Solarized Dark High Contrast",
+  "Name" : "Default",
   "Blinking Cursor" : false,
   "Guid" : "6077B795-8C02-45F8-B356-448350978157",
+  "Badge Max Width" : 0.5,
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.66574931144714355,
@@ -345,6 +352,7 @@
   "Smart Cursor Color" : false,
   "Ambiguous Double Width" : false,
   "Blur Radius" : 15.350955784574467,
+  "Badge Max Height" : 0.20000000000000001,
   "Ansi 0 Color" : {
     "Red Component" : 0.11759927868843079,
     "Color Space" : "Calibrated",
@@ -352,6 +360,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.11759573966264725
   },
+  "AWDS Pane Directory" : "",
   "Blur" : true,
   "Normal Font" : "FiraMonoNerdFontComplete-Regular 12",
   "Vertical Spacing" : 1,
@@ -362,6 +371,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.5310559868812561
   },
+  "AWDS Tab Directory" : "",
+  "AWDS Pane Option" : "Recycle",
   "Command" : "\/bin\/zsh",
   "Terminal Type" : "xterm-256color",
   "Horizontal Spacing" : 1,
@@ -392,7 +403,9 @@
     "Alpha Component" : 1,
     "Green Component" : 0.11759573966264725
   },
+  "Badge Top Margin" : 10,
   "Screen" : -2,
+  "AWDS Window Option" : "No",
   "Non Ascii Font" : "FiraMonoNerdFontComplete-Regular 12",
   "Ansi 13 Color" : {
     "Red Component" : 0.78096956014633179,
@@ -403,7 +416,7 @@
   },
   "Columns" : 180,
   "Visual Bell" : true,
-  "Custom Directory" : "No",
+  "Custom Directory" : "Advanced",
   "Thin Strokes" : 3,
   "Ansi 5 Color" : {
     "Red Component" : 0.62685638666152954,
@@ -641,13 +654,7 @@
     "Green Component" : 0.16613791882991791
   },
   "BM Growl" : true,
-  "Ansi 3 Color" : {
-    "Red Component" : 0.80126690864562988,
-    "Color Space" : "Calibrated",
-    "Blue Component" : 0.10328958928585052,
-    "Alpha Component" : 1,
-    "Green Component" : 0.53254079818725586
-  },
+  "AWDS Window Directory" : "",
   "Icon" : 1,
   "Link Color" : {
     "Red Component" : 0.7928692102432251,
@@ -656,8 +663,15 @@
     "Alpha Component" : 1,
     "Green Component" : 0.28100395202636719
   },
-  "Use Non-ASCII Font" : true,
+  "Ansi 3 Color" : {
+    "Red Component" : 0.80126690864562988,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.10328958928585052,
+    "Alpha Component" : 1,
+    "Green Component" : 0.53254079818725586
+  },
   "Shortcut" : "",
+  "Use Non-ASCII Font" : true,
   "Background Image Location" : "",
   "Bold Color" : {
     "Red Component" : 1,
@@ -669,7 +683,9 @@
   "Use Cursor Guide" : false,
   "Unlimited Scrollback" : false,
   "Custom Command" : "Custom Shell",
+  "AWDS Tab Option" : "No",
   "HotKey Key Code" : 17,
+  "Title Components" : 66,
   "Keyboard Map" : {
 
   },
@@ -708,7 +724,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.58534377813339233
   },
-  "Window Type" : 8,
+  "Window Type" : 9,
   "Use Bright Bold" : true,
   "Has Hotkey" : true,
   "HotKey Modifier Activation" : 0,
@@ -771,6 +787,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.11759573966264725
   },
+  "AWDS Pane Directory" : "",
   "Blur" : true,
   "Normal Font" : "FiraMonoNerdFontComplete-Regular 12",
   "Vertical Spacing" : 1,
@@ -783,6 +800,8 @@
     "Green Component" : 0.5310559868812561
   },
   "Space" : -1,
+  "AWDS Tab Directory" : "",
+  "AWDS Pane Option" : "Recycle",
   "HotKey Window AutoHides" : false,
   "Command" : "\/bin\/zsh",
   "Terminal Type" : "xterm-256color",
@@ -821,6 +840,7 @@
   "Screen" : -1,
   "Initial Use Transparency" : true,
   "HotKey Characters Ignoring Modifiers" : "t",
+  "AWDS Window Option" : "No",
   "Non Ascii Font" : "FiraMonoNerdFontComplete-Regular 12",
   "Ansi 13 Color" : {
     "Red Component" : 0.78096956014633179,
@@ -836,7 +856,7 @@
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
   "ASCII Ligatures" : true,
-  "Custom Directory" : "No",
+  "Custom Directory" : "Advanced",
   "Ansi 5 Color" : {
     "Red Component" : 0.62685638666152954,
     "Color Space" : "Calibrated",
