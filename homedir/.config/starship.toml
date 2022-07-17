@@ -9,6 +9,11 @@ scan_timeout = 10
 # Disable the blank line at the start of the prompt
 add_newline = false
 
+# Move the directory to the second line
+format = """
+$all
+$custom$sudo $character """
+
 [aws]
 disabled = true
 
@@ -17,14 +22,16 @@ disabled = true
 
 [character]
 success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
+error_symbol = "[➜](bold red) "
 
 [cmd_duration]
 
 [conda]
 
 [directory]
+read_only = " "
 truncation_length = 3
+format = "[$path]($style)[$read_only]($read_only_style) "
 
 [dotnet]
 disabled = true
@@ -36,6 +43,7 @@ disabled = true
 symbol = " "
 
 [git_branch]
+symbol = " "
 
 [git_commit]
 disabled = false
@@ -48,22 +56,36 @@ disabled = true
 [git_status]
 conflicted = " 🏳 "
 ahead = " 🏎💨 "
+
 behind = " 😰 "
 diverged = " 😵 "
+
 up_to_date = " ✓ "
 untracked = " 🤷 "
 stashed = " 📦 "
+
 modified = " 📝 "
 staged = ' [++\($count\)](green) '
 renamed = " 👅 "
+
 deleted = " 🗑 "
+
 
 [golang]
 symbol = "🐹 "
 
+
 [hostname]
+ssh_only = true
+format = "[$ssh_symbol](bold blue) on [$hostname](bold red) "
+trim_at = ".companyname.com"
+disabled = false
 
 [jobs]
+symbol = "+ "
+number_threshold = 4
+symbol_threshold = 0
+disabled = true
 
 [kubernetes]
 symbol = "⎈ "
@@ -77,6 +99,7 @@ disabled = true
 
 [memory_usage]
 disabled = true
+symbol = " "
 
 [java]
 symbol = " "
@@ -84,18 +107,29 @@ symbol = " "
 [julia]
 symbol = " "
 
+[lua]
+format = 'via [$symbol]($style)'
+
+[nim]
+format = 'via [$symbol]($style)'
+
 [nodejs]
-symbol = ""
+format = 'via [$symbol]($style)'
 
 [package]
 symbol = ""
 
+[perl]
+format = 'via [$symbol]($style)'
+
 [python]
+format = 'via [$symbol]($style)'
 
 [ruby]
+format = 'via [$symbol]($style)'
 
 [rust]
-symbol = " "
+format = 'via [$symbol]($style)'
 
 [sudo]
 style = "bold green"
@@ -113,7 +147,7 @@ description = "Displays a (pseudo) random emoji for each prompt"
 # change the content of the EMOJIS array to your liking and replace the
 # number 12 with the number of items in the array, minus one
 command = "EMOJIS=(🌈 🍄 🌹 🍌 🍆 🍑 🍔 🍟 🍕 🧀 🪐 🚀 ☄️); EMOJI_INDEX=$(( $RANDOM % 12 + 0 )); echo ${EMOJIS[$EMOJI_INDEX]}"
-# if you are on windows, replace "true" with "1"
 when = "true"
 shell = ["bash", "--noprofile", "--norc"]
-format = "$output"
+format = "$output "
+

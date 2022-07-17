@@ -2,15 +2,12 @@
 # tap repositories and their packages
 
 tap homebrew/core
-brew alerter
 brew aom
 brew apr
 brew apr-util
 brew autoconf
-brew autojump
 brew berkeley-db
 brew brotli
-brew c-ares
 brew ca-certificates
 brew cairo
 brew coreutils
@@ -42,6 +39,7 @@ brew jasper
 brew jpeg
 brew jpeg-xl
 brew libavif
+brew libevent
 brew libffi
 brew libmodplug
 brew libnghttp2
@@ -61,6 +59,7 @@ brew libxdmcp
 brew libxext
 brew libxrender
 brew libyaml
+brew libzip
 brew lua
 brew lz4
 brew lzo
@@ -78,7 +77,6 @@ brew pcre
 brew perl
 brew pixman
 brew pkg-config
-brew python@3.10
 brew python@3.9
 brew readline
 brew ruby
@@ -90,14 +88,15 @@ brew six
 brew sqlite
 brew starship
 brew subversion
-brew terminal-notifier
+brew tldr
+brew tmux
 brew utf8proc
-brew vim
 brew webp
 brew xerces-c
 brew xorgproto
 brew xz
 brew zsh
+brew zstd
 
 tap homebrew/bundle
 
@@ -105,9 +104,7 @@ tap homebrew/cask-fonts
 cask font-barlow
 cask font-barlow-condensed
 cask font-barlow-semi-condensed
-cask font-fira-code
 cask font-fira-code-nerd-font
-cask font-fira-mono-nerd-font
 cask font-fira-sans
 cask font-fira-sans-extra-condensed
 cask font-new-york
@@ -157,6 +154,11 @@ cask zoom
 
 tap buo/cask-upgrade
 
+tap isacikgoz/taps
+
+tap martensson/tpm
+brew tpm
+
 tap martido/graph
 
 tap rcmdnk/file
@@ -166,9 +168,8 @@ brew brew-file
 appstore 1586435171  Actions                        (1.13.0)
 appstore 1290358394  Cardhop                        (2.0.10)
 appstore 1472875808  CardPointers                   (3.4)
-appstore 1024640650  CotEditor                      (4.3.1)
 appstore 1487937127  Craft                          (2.2.4)
-appstore 953286746   Darkroom                       (6.0.5)
+appstore 953286746   Darkroom                       (6.0.6)
 appstore 975937182   Fantastical                    (3.6.6)
 appstore 1615988943  Folder Peek                    (1.3.0)
 appstore 553245401   Friendly Streaming             (5.9.21)
@@ -179,7 +180,7 @@ appstore 1472777122  PayPal Honey                   (14.10.2)
 appstore 1160374471  PiPifier                       (1.3.1)
 appstore 1289583905  Pixelmator Pro                 (2.4.5)
 appstore 1459275972  Playlisty                      (2.20)
-appstore 1533703891  PocketTube                     (11.4.0)
+appstore 1533703891  PocketTube                     (11.4.3)
 appstore 1519867270  Refined GitHub                 (22.7.1)
 appstore 1589151155  Rerouter                       (2.8)
 appstore 1540491573  Scenecuts Helper               (2022.1)
