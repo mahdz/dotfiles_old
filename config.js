@@ -11,7 +11,7 @@ module.exports = {
     'npm-check-updates',
     'prettyjson',
     'trash',
-    'vtop'
+    'vtop',
     'yo'
   ],
   mas: [
