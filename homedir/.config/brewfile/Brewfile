@@ -86,7 +86,7 @@ brew perl
 brew pixman
 brew pkg-config
 brew prettier
-brew python@3.9
+brew python@3.10
 brew readline
 brew reattach-to-user-namespace
 brew ripgrep
@@ -181,6 +181,7 @@ brew brew-file
 
 # App Store applications
 appstore 1586435171  Actions                        (1.13.0)
+appstore 1591245624  AppStorify                     (1.2)
 appstore 1290358394  Cardhop                        (2.0.10)
 appstore 1472875808  CardPointers                   (3.4)
 appstore 1487937127  Craft                          (2.2.5)

@@ -12,7 +12,7 @@
 #   - and iTerm2 is configured to let option key act as +Esc
 #   - and iTerm2 is configured to send [1;9A -> [1;9D for option + arrow keys
 # then uncomment the following line to make Meta + arrow keys mapping work
-#set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
+set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
 
 
 # -- windows & pane creation ---------------------------------------------------
@@ -340,7 +340,7 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g history-limit 10000
 
 # start with mouse mode enabled
-#set -g mouse on
+set -g mouse on
 
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
@@ -403,6 +403,8 @@ set -g @sidebar-tree-command 'tree -C'
 set -g @sidebar-tree-width '60'
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @continuum-restore 'on'
+set -g @plugin 'jaclu/tmux-menus'
+set -g @menus_without_prefix 1
 
 
 # -- custom variables ----------------------------------------------------------

@@ -2,6 +2,7 @@
 # MacOS #
 #########
 .DS_Store
+.DS_Store?
 .AppleDouble
 .LSOverride
 
@@ -79,3 +80,12 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+
+# Prevent leaking these directories
+.ssh/
+.dotfiles/
+
+# Prevent leaking .bash_history
+.bash_history
+
+*.swp
