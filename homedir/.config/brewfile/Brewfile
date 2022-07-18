@@ -88,6 +88,7 @@ brew pkg-config
 brew prettier
 brew python@3.9
 brew readline
+brew reattach-to-user-namespace
 brew ripgrep
 brew ruby
 brew sdl2
@@ -172,7 +173,6 @@ brew bat-extras-prettybat
 tap isacikgoz/taps
 
 tap martensson/tpm
-brew tpm
 
 tap martido/graph
 
