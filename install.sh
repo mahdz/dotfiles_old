@@ -258,11 +258,11 @@ if [[ $response =~ (y|yes|Y) ]]; then
   ok
 fi
 
-# if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
-#   running "Fixing Ruby Gems Directory Permissions"
-#   sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
-#   ok
-# fi
+if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
+   running "Fixing Ruby Gems Directory Permissions"
+   sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
+   ok
+fi
 
 # node version manager
 #require_brew nvm

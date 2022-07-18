@@ -1,6 +1,6 @@
 [user]
 	name = Manny Hernandez
-  email = somannyemails@gmail.com
+	email = somannyemails@gmail.com
 [github]
   # https://github.com/blog/180-local-github-config
   user = mahdz
@@ -47,7 +47,7 @@
   safecrlf = warn
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
-  editor = vim
+	editor = /Applications/Setapp/CodeRunner.app/Contents/MacOS/CodeRunner
   #editor = subl -w
 
 [alias]
@@ -165,6 +165,7 @@
 
 [init]
   templatedir = ~/.dotfiles/.git_template
+	defaultBranch = main
 
 [merge]
     tool = vscode
