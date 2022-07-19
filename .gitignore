@@ -63,9 +63,10 @@ node_modules
 
 # Prevent leaking these directories
 .ssh/
-.dotfiles/
 
 # Prevent leaking .bash_history
 .bash_history
+.zsh_history
+.zcompdump
 
 *.swp
