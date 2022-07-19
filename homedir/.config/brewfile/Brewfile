@@ -30,10 +30,10 @@ brew gdk-pixbuf
 brew gettext
 brew gh
 brew giflib
+brew git
 brew git-delta
 brew glib
 brew gmp
-brew go
 brew gobject-introspection
 brew graphite2
 brew graphviz
@@ -86,7 +86,7 @@ brew perl
 brew pixman
 brew pkg-config
 brew prettier
-brew python@3.10
+brew python@3.9
 brew readline
 brew reattach-to-user-namespace
 brew ripgrep

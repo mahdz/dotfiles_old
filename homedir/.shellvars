@@ -1,6 +1,3 @@
-# Set vim as default editor (vi is the default otherwise)
-bindkey -v
-
 #########################################################################
 # Temporary aliases useful for demos, other current projects
 #########################################################################
