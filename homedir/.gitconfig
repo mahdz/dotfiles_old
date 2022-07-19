@@ -182,7 +182,6 @@
 
 [credential]
     # cache creds (git help credential-cache)
-  helper = cache
 
 [filter "tabspace"]
   clean = expand -t 4
