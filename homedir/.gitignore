@@ -1,3 +1,5 @@
+homedir/.gitconfig_*
+
 # ----------------------------------------------------------------------
 # | macOS                                                              |
 # ----------------------------------------------------------------------
@@ -24,6 +26,14 @@ Temporary Items
 # | Security                                                           |
 # ----------------------------------------------------------------------
 id_rsa
+# Common credential files
+**/credentials.json
+**/client_secrets.json
+**/client_secret.json
+*creds*
+*.dat
+*password*
+*.httr-oauth*
 
 # ----------------------------------------------------------------------
 # | Tooling                                                            |
@@ -36,6 +46,7 @@ id_rsa
 # ----------------------------------------------------------------------
 # Logs
 *.log
+creds.js
 
 # Runtime data
 pids
@@ -63,9 +74,10 @@ node_modules
 
 # Prevent leaking these directories
 .ssh/
-.dotfiles/
 
 # Prevent leaking .bash_history
 .bash_history
+.zsh_history
+.zcompdump
 
 *.swp
