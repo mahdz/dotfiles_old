@@ -613,6 +613,8 @@
 	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
+	<key>EscapeShellCharsWithBackslash</key>
+	<false/>
 	<key>FocusFollowsMouse</key>
 	<integer>1</integer>
 	<key>ForceAntialiasingOnRetina</key>
