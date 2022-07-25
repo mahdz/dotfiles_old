@@ -157,6 +157,7 @@ cask no-ip-duc
 cask quicklook-csv
 cask quicklook-json
 cask raycast
+cask screens-connect
 cask secretive
 cask setapp
 cask sf-symbols
@@ -212,7 +213,7 @@ appstore 1522267256  Shareful                       (1.7.1)
 appstore 1572982615  Shopping Assistant for Amazon  (2.2.71)
 appstore 1594183810  Shortery                       (2.4)
 appstore 1542271266  Silicon Info                   (1.0.3)
-appstore 1623301585  Specter                        (1.2.1)
+appstore 1623301585  Specter                        (1.2.2)
 appstore 899247664   TestFlight                     (3.2.1)
 appstore 1482454543  Twitter                        (9.10.1)
 appstore 1607635845  Velja                          (1.8.4)
