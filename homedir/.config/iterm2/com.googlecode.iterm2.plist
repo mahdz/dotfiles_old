@@ -40,7 +40,7 @@
 	<key>BracketedPasteMode</key>
 	<true/>
 	<key>Command</key>
-	<string>/bin/zsh</string>
+	<string></string>
 	<key>ConvertDosNewlines</key>
 	<true/>
 	<key>Custom Color Presets</key>
@@ -1079,7 +1079,7 @@
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Columns</key>
 			<integer>180</integer>
 			<key>Command</key>
@@ -1566,7 +1566,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1</real>
+			<real>1.2</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
