@@ -1,102 +1,223 @@
-tap "buo/cask-upgrade"
-tap "eth-p/software"
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "isacikgoz/taps"
-tap "martido/graph"
-tap "rcmdnk/file"
-brew "jpeg-turbo"
-brew "autoconf"
-brew "bat"
-brew "fontconfig"
-brew "cairo"
-brew "coreutils"
-brew "exa"
-brew "firefoxpwa"
-brew "fribidi"
-brew "fzf"
-brew "libavif"
-brew "gd"
-brew "gdk-pixbuf"
-brew "gh"
-brew "git"
-brew "readline"
-brew "sqlite"
-brew "xz"
-brew "python@3.10"
-brew "gobject-introspection"
-brew "graphite2"
-brew "jasper"
-brew "netpbm"
-brew "icu4c"
-brew "harfbuzz"
-brew "python@3.9"
-brew "pango"
-brew "libtool"
-brew "graphviz"
-brew "libnghttp2"
-brew "libuv"
-brew "lua"
-brew "macos-trash"
-brew "openssl@3"
-brew "portaudio"
-brew "pyenv"
-brew "reattach-to-user-namespace"
-brew "sdl2_ttf"
-brew "six"
-brew "spotify-tui"
-brew "spotifyd", restart_service: true
-brew "subversion"
-brew "tcl-tk"
-brew "tmux"
-brew "zlib"
-brew "zsh"
-brew "eth-p/software/bat-extras"
-brew "isacikgoz/taps/tldr"
-brew "rcmdnk/file/brew-file"
-cask "adguard"
-cask "appcleaner"
-cask "betterdiscord-installer"
-cask "betterdisplay"
-cask "caprine"
-cask "cheatsheet"
-cask "cirrus"
-cask "customshortcuts"
-cask "discord"
-cask "fig"
-cask "figma"
-cask "find-empty-folders"
-cask "firefox", args: { appdir: "~/Applications" }
-cask "font-barlow"
-cask "font-barlow-condensed"
-cask "font-barlow-semi-condensed"
-cask "font-fira-code-nerd-font"
-cask "font-fira-sans"
-cask "font-fira-sans-extra-condensed"
-cask "font-new-york"
-cask "github"
-cask "google-drive"
-cask "grammarly-desktop"
-cask "iina"
-cask "iterm2"
-cask "karabiner-elements"
-cask "macfuse"
-cask "mimestream"
-cask "no-ip-duc"
-cask "quicklook-csv"
-cask "quicklook-json"
-cask "raycast"
-cask "screens-connect"
-cask "secretive"
-cask "setapp"
-cask "sf-symbols"
-cask "signal"
-cask "spotify"
-cask "suspicious-package"
-cask "telegram"
-cask "veracrypt"
-cask "webpquicklook"
+
+# tap repositories and their packages
+
+tap 'homebrew/core'
+brew 'aom'
+brew 'apr'
+brew 'apr-util'
+brew 'autoconf'
+brew 'bat'
+brew 'bat-extras'
+brew 'berkeley-db'
+brew 'brotli'
+brew 'c-ares'
+brew 'ca-certificates'
+brew 'cairo'
+brew 'cmake'
+brew 'coreutils'
+brew 'dbus'
+brew 'entr'
+brew 'exa'
+brew 'firefoxpwa'
+brew 'flac'
+brew 'fontconfig'
+brew 'freetype'
+brew 'fribidi'
+brew 'fzf'
+brew 'gd'
+brew 'gdbm'
+brew 'gdk-pixbuf'
+brew 'gettext'
+brew 'gh'
+brew 'giflib'
+brew 'git'
+brew 'git-delta'
+brew 'glib'
+brew 'gmp'
+brew 'gobject-introspection'
+brew 'graphite2'
+brew 'graphviz'
+brew 'gts'
+brew 'harfbuzz'
+brew 'icu4c'
+brew 'imath'
+brew 'jasper'
+brew 'jpeg-turbo'
+brew 'jpeg-xl'
+brew 'libavif'
+brew 'libevent'
+brew 'libffi'
+brew 'libmodplug'
+brew 'libnghttp2'
+brew 'libogg'
+brew 'libpng'
+brew 'libpthread-stubs'
+brew 'librsvg'
+brew 'libtiff'
+brew 'libtool'
+brew 'libuv'
+brew 'libvmaf'
+brew 'libvorbis'
+brew 'libx11'
+brew 'libxau'
+brew 'libxcb'
+brew 'libxdmcp'
+brew 'libxext'
+brew 'libxrender'
+brew 'libyaml'
+brew 'libzip'
+brew 'lua'
+brew 'lz4'
+brew 'lzo'
+brew 'm4'
+brew 'macos-trash'
+brew 'mas'
+brew 'mpdecimal'
+brew 'mpg123'
+brew 'nasm'
+brew 'ncurses'
+brew 'netpbm'
+brew 'node'
+brew 'openexr'
+brew 'openssl@1.1'
+brew 'openssl@3'
+brew 'pango'
+brew 'pcre'
+brew 'pcre2'
+brew 'perl'
+brew 'pixman'
+brew 'pkg-config'
+brew 'portaudio'
+brew 'prettier'
+brew 'pyenv'
+brew 'python@3.10'
+brew 'python@3.9'
+brew 'readline'
+brew 'reattach-to-user-namespace'
+brew 'ripgrep'
+brew 'ruby'
+brew 'sdl2'
+brew 'sdl2_image'
+brew 'sdl2_mixer'
+brew 'sdl2_ttf'
+brew 'shfmt'
+brew 'six'
+brew 'spotify-tui'
+brew 'spotifyd'
+brew 'sqlite'
+brew 'subversion'
+brew 'tcl-tk'
+brew 'tldr'
+brew 'tmux'
+brew 'utf8proc'
+brew 'webp'
+brew 'xerces-c'
+brew 'xorgproto'
+brew 'xz'
+brew 'zlib'
+brew 'zsh'
+brew 'zstd'
+
+tap 'homebrew/bundle'
+
+tap 'homebrew/cask-fonts'
+cask 'font-barlow'
+cask 'font-barlow-condensed'
+cask 'font-barlow-semi-condensed'
+cask 'font-fira-code-nerd-font'
+cask 'font-fira-sans'
+cask 'font-fira-sans-extra-condensed'
+cask 'font-new-york'
+
+tap 'homebrew/cask-versions'
+
+tap 'homebrew/services'
+
+tap 'homebrew/cask'
+cask 'adguard'
+cask 'appcleaner'
+cask 'betterdiscord-installer'
+cask 'betterdisplay'
+cask 'caprine'
+cask 'cheatsheet'
+cask 'cirrus'
+cask 'customshortcuts'
+cask 'discord'
+cask 'fig'
+cask 'figma'
+cask 'find-empty-folders'
+cask 'firefox'
+cask 'github'
+cask 'google-drive'
+cask 'grammarly-desktop'
+cask 'iina'
+cask 'iterm2'
+cask 'karabiner-elements'
+cask 'macfuse'
+cask 'mimestream'
+cask 'no-ip-duc'
+cask 'raycast'
+cask 'screens-connect'
+cask 'secretive'
+cask 'setapp'
+cask 'sf-symbols'
+cask 'signal'
+cask 'spotify'
+cask 'suspicious-package'
+cask 'syntax-highlight'
+cask 'telegram'
+cask 'veracrypt'
+cask 'webpquicklook'
+
+tap 'buo/cask-upgrade'
+
+tap 'eth-p/software'
+brew 'bat-extras-batdiff'
+brew 'bat-extras-batgrep'
+brew 'bat-extras-batman'
+brew 'bat-extras-batpipe'
+brew 'bat-extras-batwatch'
+brew 'bat-extras-prettybat'
+
+tap 'isacikgoz/taps'
+
+tap 'martido/graph'
+
+tap 'rcmdnk/file'
+brew 'brew-file'
+
+# App Store applications
+mas 'Actions (1.13.1)', id: 1586435171
+mas 'Cardhop (2.1)', id: 1290358394
+mas 'CardPointers (3.4)', id: 1472875808
+mas 'Craft (2.3.1)', id: 1487937127
+mas 'Darkroom (6.0.6)', id: 953286746
+mas 'Fantastical (3.6.9)', id: 975937182
+mas 'Folder Peek (1.3.1)', id: 1615988943
+mas 'Friendly Streaming (5.9.22)', id: 553245401
+mas 'Grammarly for Safari (9.60)', id: 1462114288
+mas 'Health Auto Export (2.0.5)', id: 1115567069
+mas 'Keepa - Price Tracker (3.76)', id: 1533805339
+mas 'Mapper (1.0)', id: 1589391989
+mas 'MusicHarbor (4.5.1)', id: 1440405750
+mas 'Pages (12.1)', id: 409201541
+mas 'PayPal Honey (14.10.2)', id: 1472777122
+mas 'PiPifier (1.3.1)', id: 1160374471
+mas 'Pixelmator Pro (2.4.5)', id: 1289583905
+mas 'Playlisty (2.21)', id: 1459275972
+mas 'PocketTube (11.5.1)', id: 1533703891
+mas 'Prime Video (9.15.1)', id: 545519333
+mas 'Refined GitHub (22.8.1)', id: 1519867270
+mas 'Scenecuts Helper (2022.1)', id: 1540491573
+mas 'Scrobbles for Last.fm (8.5.0)', id: 1344679160
+mas 'Shareful (1.7.1)', id: 1522267256
+mas 'Shazam (2.11.0)', id: 897118787
+mas 'Shopping Assistant for Amazon (2.2.71)', id: 1572982615
+mas 'Shortery (2.6)', id: 1594183810
+mas 'Silicon Info (1.0.3)', id: 1542271266
+mas 'Specter (1.3.1)', id: 1623301585
+mas 'TestFlight (3.2.1)', id: 899247664
+mas 'Twitter (9.21)', id: 1482454543
+mas 'Velja (1.9.0)', id: 1607635845
+mas 'Widgy (1.9.5)', id: 1524540481
+mas 'WordService (2.8.3)', id: 899972312
