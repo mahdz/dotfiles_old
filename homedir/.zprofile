@@ -1,5 +1,8 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ]] && . "$HOME/.fig/shell/zprofile.pre.zsh"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ###############################################################################
 #Import the shell-agnostic (Bash or Zsh) environment config
 ##############################################################################
@@ -18,3 +21,4 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && . "$HOME/.fig/shell/zprofile.post.zsh"
+

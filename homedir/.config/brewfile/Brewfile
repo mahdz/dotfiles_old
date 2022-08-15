@@ -13,6 +13,7 @@ brew brotli
 brew c-ares
 brew ca-certificates
 brew cairo
+brew chruby
 brew cmake
 brew coreutils
 brew dbus
@@ -95,7 +96,7 @@ brew python@3.9
 brew readline
 brew reattach-to-user-namespace
 brew ripgrep
-brew ruby
+brew ruby-install
 brew sdl2
 brew sdl2_image
 brew sdl2_mixer
