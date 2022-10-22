@@ -2427,9 +2427,9 @@
 	<key>PromptForPasteWhenNotAtPrompt</key>
 	<true/>
 	<key>PromptOnQuit</key>
-	<true/>
-	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>RememberWindowPositions</key>
 	<false/>
 	<key>RunJobsInServers</key>
@@ -2443,7 +2443,7 @@
 	<key>ShowTimestampsByDefault</key>
 	<false/>
 	<key>SmartPlacement</key>
-	<true/>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -2500,7 +2500,7 @@
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>ZippyTextDrawing</key>
 	<false/>
 	<key>disableMetalWhenUnplugged</key>
