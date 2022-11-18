@@ -27,4 +27,4 @@ ${n.message}`:g,B=[$,t,e].filter(Boolean).join(`
         end tell
       end if
     end tell
-  `;try{let t=await ln(e);await(0,R.showToast)(R.ToastStyle.Success,"Done",t)}catch{await(0,R.showToast)(R.ToastStyle.Failure,"Finder is not running")}};0&&(module.exports={});
+  `;try{let t=await ln(e);await(0,R.showToast)(R.Toast.Style.Success,"Done",t)}catch{await(0,R.showToast)(R.Toast.Style.Failure,"Finder is not running")}};0&&(module.exports={});

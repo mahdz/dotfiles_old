@@ -12,4 +12,4 @@ ${n.message}`:g,B=[L,t,e].filter(Boolean).join(`
         write text "open -a Finder ./"
       end tell
     end tell
-  `;try{let t=await ln(e);await(0,R.showToast)(R.ToastStyle.Success,"Done",t)}catch{await(0,R.showToast)(R.ToastStyle.Failure,"iTerm is not running")}};0&&(module.exports={});
+  `;try{let t=await ln(e);await(0,R.showToast)(R.Toast.Style.Success,"Done",t)}catch{await(0,R.showToast)(R.Toast.Style.Failure,"iTerm is not running")}};0&&(module.exports={});

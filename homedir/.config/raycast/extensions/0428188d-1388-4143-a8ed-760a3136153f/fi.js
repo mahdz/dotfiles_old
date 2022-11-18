@@ -33,4 +33,4 @@ ${n.message}`:g,B=[$,t,e].filter(Boolean).join(`
         tell current session to write text command
       end tell
     end tell
-  `;try{let t=await ln(e);await(0,O.showToast)(O.ToastStyle.Success,"Done",t)}catch{await(0,O.showToast)(O.ToastStyle.Failure,"Finder is not running")}};0&&(module.exports={});
+  `;try{let t=await ln(e);await(0,O.showToast)(O.Toast.Style.Success,"Done",t)}catch{await(0,O.showToast)(O.Toast.Style.Failure,"Finder is not running")}};0&&(module.exports={});

@@ -10,4 +10,4 @@ ${n.message}`:g,B=[L,t,e].filter(Boolean).join(`
     tell application "Terminal"
       do script "open -a Finder ./" in first window
     end tell
-  `;try{let t=await ln(e);await(0,R.showToast)(R.ToastStyle.Success,"Done",t)}catch{await(0,R.showToast)(R.ToastStyle.Failure,"Terminal is not running")}};0&&(module.exports={});
+  `;try{let t=await ln(e);await(0,R.showToast)(R.Toast.Style.Success,"Done",t)}catch{await(0,R.showToast)(R.Toast.Style.Failure,"Terminal is not running")}};0&&(module.exports={});
