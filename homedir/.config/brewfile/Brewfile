@@ -5,6 +5,7 @@ tap homebrew/core
 brew aom
 brew apr
 brew apr-util
+brew aribb24
 brew autoconf
 brew automake
 brew bat
@@ -81,6 +82,7 @@ brew libsoxr
 brew libtasn1
 brew libtiff
 brew libtool
+brew libunibreak
 brew libunistring
 brew libuv
 brew libvidstab
@@ -123,6 +125,7 @@ brew pcre2
 brew perl
 brew pixman
 brew pkg-config
+brew popt
 brew portaudio
 brew prettier
 brew protobuf
@@ -133,6 +136,7 @@ brew rav1e
 brew readline
 brew reattach-to-user-namespace
 brew ripgrep
+brew rsync
 brew rubberband
 brew ruby-install
 brew sdl2
@@ -148,6 +152,7 @@ brew spotifyd
 brew sqlite
 brew srt
 brew subversion
+brew svt-av1
 brew tcl-tk
 brew tesseract
 brew theora
@@ -161,6 +166,7 @@ brew x265
 brew xerces-c
 brew xorgproto
 brew xvid
+brew xxhash
 brew xz
 brew yt-dlp
 brew zeromq
@@ -250,41 +256,42 @@ tap rcmdnk/file
 brew brew-file
 
 # App Store applications
-appstore 1586435171  Actions                (2.1.1)
-appstore 897446215   Canva                  (1.56.0)
-appstore 1290358394  Cardhop                (2.2.2)
+appstore 1586435171  Actions                (2.2.1)
+appstore 897446215   Canva                  (1.58.0)
+appstore 1290358394  Cardhop                (2.2.4)
 appstore 1472875808  CardPointers           (4.1.1)
-appstore 1441250616  Clean Email            (2.0.9)
-appstore 1198176727  Controller             (6.0.1)
-appstore 953286746   Darkroom               (6.2.2)
-appstore 571213070   DaVinci Resolve        (18.1.1)
-appstore 516538625   Disk Decipher          (3.18.2)
-appstore 975937182   Fantastical            (3.7.3)
+appstore 1441250616  Clean Email            (3.0.0)
+appstore 1198176727  Controller             (6.1.0)
+appstore 953286746   Darkroom               (6.3.2)
+appstore 571213070   DaVinci Resolve        (18.1.2)
+appstore 516538625   Disk Decipher          (3.18.6)
+appstore 975937182   Fantastical            (3.7.6)
 appstore 1615988943  Folder Peek            (1.6.1)
+appstore 1479461686  FoodNoms               (2023.2)
 appstore 6443796196  FreeScaler             (1.0.1)
-appstore 553245401   Friendly Streaming     (5.9.29)
+appstore 553245401   Friendly Streaming     (5.9.31)
 appstore 1462114288  Grammarly for Safari   (9.63)
-appstore 1115567069  Health Auto Export     (2.0.5)
-appstore 1533805339  Keepa - Price Tracker  (3.99)
+appstore 1115567069  Health Auto Export     (2.1.2)
+appstore 1533805339  Keepa - Price Tracker  (4.10)
 appstore 409183694   Keynote                (12.2.1)
 appstore 1589391989  Mapper                 (1.0)
-appstore 1440405750  MusicHarbor            (4.5.7)
-appstore 905953485   NordVPN                (7.13.0)
+appstore 1440405750  MusicHarbor            (4.5.8)
+appstore 1450504903  Night Eye              (4.8.8)
+appstore 905953485   NordVPN                (7.14.1)
 appstore 409201541   Pages                  (12.2.1)
-appstore 1472777122  PayPal Honey           (15.6.2)
+appstore 1472777122  PayPal Honey           (15.6.4)
 appstore 1160374471  PiPifier               (1.3.1)
-appstore 1289583905  Pixelmator Pro         (3.1.1)
-appstore 1459275972  Playlisty              (2.23)
+appstore 1289583905  Pixelmator Pro         (3.2.3)
+appstore 1459275972  Playlisty              (2.24)
 appstore 1533703891  PocketTube             (12.2.12)
 appstore 1519867270  Refined GitHub         (22.11.21)
-appstore 1612180624  Screen Mirror          (0.99)
-appstore 1344679160  Scrobbles for Last.fm  (9.1.0)
+appstore 1344679160  Scrobbles for Last.fm  (9.1.3)
 appstore 1522267256  Shareful               (1.7.1)
 appstore 897118787   Shazam                 (2.11.0)
 appstore 1594183810  Shortery               (3.0)
-appstore 1566795636  Stellar                (2.0.9)
+appstore 1566795636  Stellar                (2.1.1)
 appstore 1482454543  Twitter                (9.30)
-appstore 1211437633  Universe               (3.64.4)
-appstore 1607635845  Velja                  (1.12.3)
+appstore 1211437633  Universe               (2023.5)
+appstore 1607635845  Velja                  (1.12.4)
 appstore 1494451650  VN                     (0.15)
 appstore 899972312   WordService            (2.8.3)
