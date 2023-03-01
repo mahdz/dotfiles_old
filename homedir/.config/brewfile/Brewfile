@@ -1,7 +1,50 @@
 
 # tap repositories and their packages
 
-tap homebrew/core
+tap homebrew/autoupdate
+
+tap homebrew/bundle
+
+tap homebrew/cask-fonts
+cask font-barlow
+cask font-barlow-condensed
+cask font-barlow-semi-condensed
+cask font-fira-code-nerd-font
+cask font-fira-sans
+cask font-fira-sans-extra-condensed
+cask font-new-york
+cask font-sf-compact
+cask font-sf-mono
+cask font-sf-pro
+
+tap homebrew/cask-versions
+cask discord-canary
+
+tap homebrew/services
+
+tap buo/cask-upgrade
+
+tap eth-p/software
+brew bat-extras
+brew bat-extras-batdiff
+brew bat-extras-batgrep
+brew bat-extras-batman
+brew bat-extras-batpipe
+brew bat-extras-batwatch
+brew bat-extras-prettybat
+
+tap isacikgoz/taps
+brew tldr
+
+tap martido/graph
+
+tap rcmdnk/file
+brew brew-file
+
+tap teamookla/speedtest
+brew speedtest
+
+# Other Homebrew packages
 brew aom
 brew apr
 brew apr-util
@@ -9,7 +52,6 @@ brew aribb24
 brew autoconf
 brew automake
 brew bat
-brew bat-extras
 brew bdw-gc
 brew berkeley-db
 brew bison
@@ -30,6 +72,7 @@ brew exa
 brew ffmpeg
 brew firefoxpwa
 brew flac
+brew fluid-synth
 brew fontconfig
 brew freetype
 brew frei0r
@@ -104,6 +147,7 @@ brew libxau
 brew libxcb
 brew libxdmcp
 brew libxext
+brew libxmp
 brew libxrender
 brew libyaml
 brew libzip
@@ -128,6 +172,7 @@ brew openjpeg
 brew openssl@1.1
 brew openssl@3
 brew opus
+brew opusfile
 brew p11-kit
 brew pango
 brew pcre
@@ -167,7 +212,6 @@ brew svt-av1
 brew tcl-tk
 brew tesseract
 brew theora
-brew tldr
 brew tmux
 brew unbound
 brew utf8proc
@@ -186,28 +230,7 @@ brew zlib
 brew zsh
 brew zstd
 
-tap homebrew/autoupdate
-
-tap homebrew/bundle
-
-tap homebrew/cask-fonts
-cask font-barlow
-cask font-barlow-condensed
-cask font-barlow-semi-condensed
-cask font-fira-code-nerd-font
-cask font-fira-sans
-cask font-fira-sans-extra-condensed
-cask font-new-york
-cask font-sf-compact
-cask font-sf-mono
-cask font-sf-pro
-
-tap homebrew/cask-versions
-cask discord-canary
-
-tap homebrew/services
-
-tap homebrew/cask
+# Other Cask applications
 cask adguard
 cask appcleaner
 cask arc
@@ -246,54 +269,33 @@ cask telegram
 cask telegram-desktop
 cask veracrypt
 cask webpquicklook
-cask yt-music
 cask zoom
-
-tap buo/cask-upgrade
-
-tap eth-p/software
-brew bat-extras-batdiff
-brew bat-extras-batgrep
-brew bat-extras-batman
-brew bat-extras-batpipe
-brew bat-extras-batwatch
-brew bat-extras-prettybat
-
-tap isacikgoz/taps
-
-tap martido/graph
-
-tap rcmdnk/file
-brew brew-file
-
-tap teamookla/speedtest
-brew speedtest
 
 # App Store applications
 appstore 1586435171  Actions                (2.2.1)
-appstore 897446215   Canva                  (1.59.0)
+appstore 897446215   Canva                  (1.60.0)
 appstore 1290358394  Cardhop                (2.2.5)
 appstore 1472875808  CardPointers           (4.1.1)
 appstore 1441250616  Clean Email            (3.0.0)
-appstore 1198176727  Controller             (6.1.2)
-appstore 953286746   Darkroom               (6.3.3)
+appstore 1198176727  Controller             (6.1.3)
+appstore 953286746   Darkroom               (6.3.4)
 appstore 1453273600  Data Jar               (1.1.4)
-appstore 571213070   DaVinci Resolve        (18.1.2)
-appstore 516538625   Disk Decipher          (3.19.2)
-appstore 975937182   Fantastical            (3.7.6)
+appstore 571213070   DaVinci Resolve        (18.1.3)
+appstore 516538625   Disk Decipher          (3.19.5)
+appstore 975937182   Fantastical            (3.7.7)
 appstore 1615988943  Folder Peek            (1.6.1)
-appstore 1479461686  FoodNoms               (2023.8)
+appstore 1479461686  FoodNoms               (2023.9)
 appstore 6443796196  FreeScaler             (1.0.1)
-appstore 553245401   Friendly Streaming     (5.9.31)
+appstore 553245401   Friendly Streaming     (5.9.33)
 appstore 1462114288  Grammarly for Safari   (9.63)
 appstore 1115567069  Health Auto Export     (2.1.3)
-appstore 6444667067  Hyperduck              (1.0.1)
+appstore 6444667067  Hyperduck              (1.0.3)
 appstore 1533805339  Keepa - Price Tracker  (4.10)
 appstore 409183694   Keynote                (12.2.1)
 appstore 1589391989  Mapper                 (1.0)
-appstore 1440405750  MusicHarbor            (4.6.0)
+appstore 1440405750  MusicHarbor            (4.6.1)
 appstore 1450504903  Night Eye              (4.8.10)
-appstore 905953485   NordVPN                (7.15.1)
+appstore 905953485   NordVPN                (7.16.1)
 appstore 409201541   Pages                  (12.2.1)
 appstore 1472777122  PayPal Honey           (15.6.4)
 appstore 1160374471  PiPifier               (1.3.1)
@@ -303,11 +305,10 @@ appstore 1533703891  PocketTube             (12.2.12)
 appstore 1519867270  Refined GitHub         (23.2.1)
 appstore 1344679160  Scrobbles for Last.fm  (9.1.3)
 appstore 1522267256  Shareful               (1.7.1)
-appstore 897118787   Shazam                 (2.11.0)
 appstore 1594183810  Shortery               (3.3)
-appstore 1566795636  Stellar                (2.1.1)
+appstore 1566795636  Stellar                (2.2.0)
 appstore 1482454543  Twitter                (9.30)
-appstore 1211437633  Universe               (2023.10)
+appstore 1211437633  Universe               (2023.14)
 appstore 1607635845  Velja                  (1.12.4)
 appstore 1494451650  VN                     (0.15)
 appstore 899972312   WordService            (2.8.3)
