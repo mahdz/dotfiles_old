@@ -2,6 +2,7 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew abseil
 brew aom
 brew apr
 brew apr-util
@@ -242,7 +243,6 @@ cask font-sf-mono
 cask font-sf-pro
 
 tap homebrew/cask-versions
-cask discord-canary
 
 tap homebrew/services
 
@@ -262,41 +262,40 @@ brew speedtest
 
 # App Store applications
 appstore 1586435171 Actions (2.5.2)
-appstore 897446215 Canva (1.66.0)
-appstore 1290358394 Cardhop (2.2.7)
+appstore 897446215 Canva (1.67.0)
+appstore 1290358394 Cardhop (2.2.8)
 appstore 1472875808 CardPointers (4.4.1)
-appstore 1441250616 Clean Email (3.0.0)
-appstore 1198176727 ControllerForHomeKit (6.1.3)
-appstore 953286746 Darkroom (6.3.12)
+appstore 1441250616 Clean Email (3.0.10)
+appstore 1198176727 ControllerForHomeKit (6.2.0)
+appstore 953286746 Darkroom (6.4)
 appstore 1453273600 Data Jar (1.1.4)
 appstore 571213070 DaVinci Resolve (18.1.4)
-appstore 516538625 Disk Decipher (3.21.0)
-appstore 975937182 Fantastical (3.7.14)
-appstore 1615988943 Folder Peek (1.8.0)
-appstore 1479461686 FoodNoms (2023.20)
+appstore 516538625 Disk Decipher (3.21.1)
+appstore 975937182 Fantastical (3.7.15)
+appstore 1615988943 Folder Peek (1.8.2)
+appstore 1479461686 FoodNoms (2023.21)
 appstore 6443796196 FreeScaler (1.0.1)
 appstore 553245401 Friendly Streaming (5.9.36)
 appstore 1462114288 Grammarly for Safari (9.66)
 appstore 1115567069 Health Auto Export (2.1.4)
 appstore 6444667067 Hyperduck (1.0.7)
 appstore 1533805339 Keepa - Price Tracker (4.10)
-appstore 409183694 Keynote (13.0)
+appstore 409183694 Keynote (13.1)
 appstore 1589391989 Mapper (1.0)
 appstore 1440405750 MusicHarbor (4.6.6)
 appstore 1450504903 Night Eye (4.9.3)
-appstore 905953485 NordVPN (8.3.2)
-appstore 409201541 Pages (13.0)
+appstore 905953485 NordVPN (8.5.0)
+appstore 409201541 Pages (13.1)
 appstore 1472777122 PayPal Honey (15.13.0)
 appstore 1160374471 PiPifier (1.3.1)
 appstore 1289583905 Pixelmator Pro (3.3.6)
 appstore 1459275972 Playlisty (3.3)
-appstore 1533703891 PocketTube (12.2.12)
 appstore 1519867270 Refined GitHub (23.5.10)
 appstore 1344679160 Scrobbles for Last.fm (9.1.6)
 appstore 1522267256 Shareful (1.9.0)
 appstore 1594183810 Shortery (3.9)
 appstore 1566795636 Stellar (2.4.0)
-appstore 1211437633 Universe (2023.27)
-appstore 1607635845 Velja (1.15.1)
+appstore 1211437633 Universe (2023.28)
+appstore 1607635845 Velja (1.15.2)
 appstore 1494451650 VN (0.16.2)
 appstore 899972312 WordService (2.8.3)
