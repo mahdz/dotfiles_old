@@ -17,7 +17,7 @@
 import IOBluetooth
 
 // Get your device's MAC address by option (⌥) + clicking the bluetooth icon in the menu bar
-let deviceAddress = ""
+let deviceAddress = "2C:32:6A:CF:A0:36"
 
 func toggleAirPods() {
     guard let bluetoothDevice = IOBluetoothDevice(addressString: deviceAddress) else {
