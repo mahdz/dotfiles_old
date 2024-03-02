@@ -37,6 +37,8 @@ brew freetype
 brew frei0r
 brew fribidi
 brew fzf
+brew game-music-emu
+brew gcc
 brew gd
 brew gdbm
 brew gdk-pixbuf
@@ -57,9 +59,11 @@ brew gts
 brew guile
 brew harfbuzz
 brew highway
+brew hwloc
 brew icu4c
 brew imagemagick
 brew imath
+brew isl
 brew jasper
 brew jbig2dec
 brew jpeg-turbo
@@ -82,6 +86,7 @@ brew libidn2
 brew liblqr
 brew libmicrohttpd
 brew libmodplug
+brew libmpc
 brew libnghttp2
 brew libogg
 brew libomp
@@ -94,6 +99,7 @@ brew libsamplerate
 brew libsndfile
 brew libsodium
 brew libsoxr
+brew libssh
 brew libssh2
 brew libtasn1
 brew libtiff
@@ -123,18 +129,22 @@ brew macos-trash
 brew mas
 brew mbedtls
 brew mpdecimal
+brew mpfr
 brew mpg123
 brew nasm
 brew ncurses
 brew netpbm
 brew nettle
 brew node
+brew numpy
 brew oniguruma
+brew openblas
 brew opencore-amr
 brew openexr
 brew openjpeg
 brew openssl@1.1
 brew openssl@3
+brew openvino
 brew opus
 brew opusfile
 brew p11-kit
@@ -148,6 +158,7 @@ brew popt
 brew portaudio
 brew prettier
 brew protobuf
+brew pugixml
 brew python-brotli
 brew python-certifi
 brew python-mutagen
@@ -176,6 +187,7 @@ brew sqlite
 brew srt
 brew subversion
 brew svt-av1
+brew tbb
 brew tcl-tk
 brew tesseract
 brew theora
@@ -183,6 +195,7 @@ brew tldr
 brew tmux
 brew unbound
 brew utf8proc
+brew wavpack
 brew webp
 brew x264
 brew x265
@@ -214,6 +227,7 @@ cask firefox
 cask github
 cask grammarly-desktop
 cask iterm2
+cask jump-desktop-connect
 cask karabiner-elements
 cask macfuse
 cask onyx
@@ -267,34 +281,33 @@ brew speedtest
 
 # App Store applications
 appstore 1586435171 Actions (3.1.0)
-appstore 1290358394 Cardhop (2.2.14)
+appstore 1290358394 Cardhop (2.2.15)
 appstore 1472875808 CardPointers (5.1.5)
-appstore 1441250616 Clean Email (3.0.29)
-appstore 1198176727 ControllerForHomeKit (6.5.0)
-appstore 953286746 Darkroom (6.6.7)
+appstore 1441250616 Clean Email (3.0.30)
+appstore 953286746 Darkroom (6.7.2)
 appstore 1453273600 Data Jar (1.1.4)
-appstore 516538625 Disk Decipher (4.4.3)
-appstore 975937182 Fantastical (3.8.9)
-appstore 1615988943 Folder Peek (1.10.0)
+appstore 6443923358 Detail Studio (4.13.10)
+appstore 975937182 Fantastical (3.8.12)
+appstore 1615988943 Folder Peek (1.10.2)
 appstore 6443796196 FreeScaler (1.0.1)
-appstore 553245401 Friendly Streaming (5.9.51)
-appstore 1462114288 Grammarly for Safari (9.71)
+appstore 553245401 Friendly Streaming (5.9.53)
+appstore 1462114288 Grammarly for Safari (9.72)
 appstore 1115567069 Health Auto Export (2.1.4)
 appstore 1540705431 Hover for Safari (2.7)
-appstore 6444667067 Hyperduck (1.0.7)
+appstore 6444667067 Hyperduck (1.1.0)
 appstore 1533805339 Keepa - Price Tracker (4.10)
 appstore 409183694 Keynote (13.2)
 appstore 1589391989 Mapper (3.0.1)
-appstore 1440405750 MusicHarbor (4.7.2)
-appstore 905953485 NordVPN (8.15.1)
+appstore 1440405750 MusicHarbor (4.7.4)
+appstore 905953485 NordVPN (8.16.1)
 appstore 409201541 Pages (13.2)
-appstore 1472777122 PayPal Honey (16.4.1)
+appstore 1472777122 PayPal Honey (16.5.1)
 appstore 1160374471 PiPifier (1.3.1)
-appstore 1289583905 Pixelmator Pro (3.5.5)
-appstore 1459275972 Playlisty (3.11)
+appstore 1289583905 Pixelmator Pro (3.5.6)
+appstore 1459275972 Playlisty (3.12)
 appstore 1344679160 Scrobbles for Last.fm (9.3.2)
-appstore 1522267256 Shareful (1.9.1)
-appstore 1594183810 Shortery (5.2)
+appstore 1522267256 Shareful (1.10.0)
+appstore 1594183810 Shortery (5.3)
 appstore 1211437633 Universe (2023.47)
 appstore 1607635845 Velja (1.16.4)
 appstore 899972312 WordService (2.8.3)
