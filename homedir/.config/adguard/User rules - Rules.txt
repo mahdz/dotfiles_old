@@ -1,0 +1,39 @@
+@@||cdn.9to5terminal.com/push.js
+@@||dyn.keepa.com^$important,document
+@@||youtube.com/feed/subscriptions^
+@@||apple.com.edgekey.net^$important,document
+@@||icloud-content.com^$important,document
+@@||edge.apple^$important,document
+@@||mzstatic.com^$important,document
+@@||aaplimg.com^$important,document
+@@||apple-dns.net^$important,document
+@@||m.stripe.network^$important,document
+@@||stripe.com^$important,document
+@@||myaccount.google.com^$important,document,stealth,removeparam,cookie
+@@||accounts.google.com^$important,document,stealth,removeparam,cookie
+@@||cash.app^$document,stealth,removeparam,cookie,important
+@@||wpt.fyi^$important,document
+@@||secure01b.chase.com^$important,document
+@@||account.live.com^$important,document
+@@||sniffies.com^$important,document,~extension
+@@||static-*.xvideos.com/*/js/
+@@||xvideos.*/pornstar-channels/$elemhide,jsinject,extension,xmlhttprequest
+@@||xvideos.*/profiles/$elemhide,jsinject,extension,xmlhttprequest
+@@||xvideos.*/*-channels/*/videos/$elemhide,jsinject,extension,xmlhttprequest
+@@||xvideos.*/models/$elemhide,jsinject,extension,xmlhttprequest
+@@||xvideos.com/channels/$elemhide,jsinject,extension
+@@||xvideos.*/amateur-channels/$elemhide,jsinject,extension,xmlhttprequest
+@@||myvidster.com/processor.php
+xnxx.com###video-content > div.ntv363bEBac9221F91cF4bec8EFbf5Bee25:nth-child(2)
+xvideos.red##div.x-overlay.x-overlay-box.auto-width-popup:last-child
+adam4adam.com##.banner-adam-live
+adam4adam.com##.banner-vip
+adam4adam.com##div.promo-bar-ads:first-child
+adam4adam.com##div.ads-banner-container:nth-child(4)
+tubeload.co###cbaafeabbbcb
+@@||4chan.org^*$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval'
+@@|blob:$image,media,domain=4chan.org
+@@||boards.4chan.org^$csp
+@@||4channel.org^*$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval'
+@@|blob:$image,media,domain=4channel.org
+@@||boards.4channel.org^$csp 
