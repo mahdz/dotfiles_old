@@ -1,12 +1,11 @@
 module.exports = {
   brew: [
     //Moved to Brewfile
-],
+  ],
   cask: [
     //Moved to Brewfile
   ],
-  gem: [
-  ],
+  gem: [],
   npm: [
     'npm-check-updates',
     'prettyjson',
