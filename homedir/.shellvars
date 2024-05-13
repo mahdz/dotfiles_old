@@ -1,0 +1,24 @@
+##############################################################################
+# Variables
+##############################################################################
+
+
+################################################
+# Editors
+
+export EDITOR='nano'
+export VISUAL='nano'
+export PAGER='less'
+
+
+################################################
+# Tool settings
+
+export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
+
+
+################################################
+
+export BROWSER="Safari"
+export SSH_AUTH_SOCK="/Users/manny/Library/Containers/org.hejki.osx.sshce.agent/Data/socket.ssh"
+LESS_TERMCAP_md="${yellow}"

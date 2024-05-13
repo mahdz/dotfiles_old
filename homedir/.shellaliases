@@ -1,5 +1,28 @@
 #!/bin/sh
 
+alias -- dnsflush='sudo killall -HUP mDNSResponder'
+alias -- ip='curl ifconfig.co && curl ifconfig.co/country && curl ifconfig.co/country-iso && curl ifconfig.co/city && curl ifconfig.co/asn'
+alias -- ..='cd ../'
+alias -- ...='cd ../../'
+alias -- rmdir='trash'
+alias -- del='trash'
+alias -- rm='trash'
+alias -- mv='mv -i'
+alias -- zshrc='${=EDITOR} ~/.zshrc'
+alias -- reload='reset && exec $SHELL -l'
+alias -- c='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
+alias -- r='reset'
+alias -- dotfilesinstall='cd ~/.dotfiles && ./install.sh'
+alias -- path='echo -e ${PATH//:/\\n}'
+alias -- emptytrash='sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '"'"'delete from LSQuarantineEvent'"'"''
+alias -- oa='open -a'
+alias -- pumpitup='osascript -e '"'"'set volume output volume 100'"'"''
+alias -- updateall='sudo softwareupdate -i -a; brewup; sudo gem update --system; sudo gem update; sudo gem cleanup; mas outdated'
+alias -- update='sudo softwareupdate -i -a'
+alias -- restart='sudo fdesetup authrestart'
+alias -- stfu='osascript -e '"'"'set volume output muted true'"'"''
+
+
 #################################
 # Simple Program Name Shortening
 alias g=git
