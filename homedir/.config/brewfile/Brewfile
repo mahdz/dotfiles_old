@@ -31,7 +31,6 @@ brew freetype
 brew frei0r
 brew fribidi
 brew fzf
-brew gcc
 brew gd
 brew gdbm
 brew gdk-pixbuf
@@ -50,11 +49,9 @@ brew graphviz
 brew gts
 brew harfbuzz
 brew highway
-brew hwloc
 brew icu4c
 brew imagemagick
 brew imath
-brew isl
 brew jasper
 brew jbig2dec
 brew jpeg-turbo
@@ -78,7 +75,6 @@ brew libidn
 brew libidn2
 brew liblqr
 brew libmicrohttpd
-brew libmpc
 brew libnghttp2
 brew libogg
 brew libomp
@@ -118,20 +114,16 @@ brew macos-trash
 brew mas
 brew mbedtls
 brew mpdecimal
-brew mpfr
 brew mpg123
 brew ncurses
 brew netpbm
 brew nettle
 brew node
-brew numpy
 brew oniguruma
-brew openblas
 brew opencore-amr
 brew openexr
 brew openjpeg
 brew openssl@3
-brew openvino
 brew opus
 brew p11-kit
 brew pango
@@ -144,8 +136,6 @@ brew popt
 brew portaudio
 brew prettier
 brew protobuf
-brew pugixml
-brew python-packaging
 brew python@3.10
 brew python@3.12
 brew python@3.9
@@ -166,7 +156,6 @@ brew sqlite
 brew srt
 brew subversion
 brew svt-av1
-brew tbb
 brew tcl-tk
 brew tesseract
 brew theora
@@ -204,6 +193,16 @@ cask etrecheckpro
 cask find-empty-folders
 cask fing
 cask firefox
+cask font-barlow
+cask font-barlow-condensed
+cask font-barlow-semi-condensed
+cask font-fira-code-nerd-font
+cask font-fira-sans
+cask font-fira-sans-extra-condensed
+cask font-new-york
+cask font-sf-compact
+cask font-sf-mono
+cask font-sf-pro
 cask github
 cask grammarly-desktop
 cask iina
@@ -221,29 +220,22 @@ cask signal
 cask silnite
 cask spotify
 cask suspicious-package
+cask symboliclinker
 cask telegram-a
 cask telegram-desktop
 cask veracrypt
 cask vlc
 cask webpquicklook
+cask zoom
 
 tap homebrew/autoupdate
 
 tap homebrew/bundle
 
-tap homebrew/cask-fonts
-cask font-barlow
-cask font-barlow-condensed
-cask font-barlow-semi-condensed
-cask font-fira-code-nerd-font
-cask font-fira-sans
-cask font-fira-sans-extra-condensed
-cask font-new-york
-cask font-sf-compact
-cask font-sf-mono
-cask font-sf-pro
-
 tap homebrew/services
+
+tap alienator88/cask
+cask pearcleaner
 
 tap buo/cask-upgrade
 
@@ -261,31 +253,31 @@ tap teamookla/speedtest
 # App Store applications
 appstore 1586435171 Actions (3.2.0)
 appstore 1290358394 Cardhop (2.2.17)
-appstore 1472875808 CardPointers (5.2.1)
+appstore 1472875808 CardPointers (5.2.3)
 appstore 1441250616 Clean Email (3.0.32)
-appstore 1447330651 Copilot (4.0.9)
+appstore 1447330651 Copilot (4.1.1)
 appstore 953286746 Darkroom (6.7.10)
 appstore 6443923358 Detail Studio (4.13.12)
 appstore 975937182 Fantastical (3.8.16)
 appstore 1615988943 Folder Peek (1.10.4)
 appstore 6443796196 FreeScaler (1.0.1)
-appstore 553245401 Friendly Streaming (5.9.58)
+appstore 553245401 Friendly Streaming (5.9.59)
 appstore 1540705431 Hover for Safari (2.7)
 appstore 6444667067 Hyperduck (1.1.0)
 appstore 1533805339 Keepa - Price Tracker (4.19)
 appstore 409183694 Keynote (14.0)
 appstore 1661733229 LocalSend (1.14.0)
 appstore 1589391989 Mapper (3.0.1)
-appstore 1440405750 MusicHarbor (4.8.1)
-appstore 905953485 NordVPN (8.19.0)
+appstore 1440405750 MusicHarbor (4.8.2)
+appstore 905953485 NordVPN (8.20.0)
 appstore 409201541 Pages (14.0)
 appstore 1472777122 PayPal Honey (16.5.1)
-appstore 1444636541 Photomator (3.3.12)
+appstore 1444636541 Photomator (3.3.14)
 appstore 1160374471 PiPifier (1.3.1)
-appstore 1289583905 Pixelmator Pro (3.5.11)
+appstore 1289583905 Pixelmator Pro (3.6.1)
 appstore 1459275972 Playlisty for Apple Music (3.14)
 appstore 1344679160 Scrobbles for Last.fm (9.3.3)
-appstore 1522267256 Shareful (1.10.0)
+appstore 1522267256 Shareful (1.10.1)
 appstore 1594183810 Shortery (5.5)
 appstore 1607635845 Velja (2.0.3)
 appstore 899972312 WordService (2.8.3)

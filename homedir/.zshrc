@@ -161,6 +161,25 @@ alias -- brewup='brew update && brew upgrade && brew cu --no-brew-update --inter
 alias -- brewg='brew graph --installed --highlight-leaves | fdp -T png -o graph.png && open graph.png'
 alias -- bfc='brew file casklist && o Caskfile'
 
+
+##############################################################################
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use &> /dev/null
+  else
+    nvm use stable
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+
 ##############################################################################
 function configunlink() {
   for file in .*; do
