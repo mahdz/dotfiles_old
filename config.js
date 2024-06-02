@@ -7,11 +7,17 @@ module.exports = {
   ],
   gem: [],
   npm: [
-    'npm-check-updates',
+    // 'antic',
+    // 'buzzphrase',
+    // 'eslint',
+    // 'instant-markdown-d',
+    //'generator-dockerize',
+    //'gulp',
+    //'npm-check-updates',
     'prettyjson',
     'trash',
-    'vtop',
-    'yo'
+    'vtop'
+    // ,'yo'
   ],
   mas: [
     //Moved to Brewfile
