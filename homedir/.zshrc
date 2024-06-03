@@ -3,9 +3,9 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 ################################################
 
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.2
+#source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+#source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+#chruby ruby-3.1.2
 
 
 ##############################################################################
@@ -34,7 +34,7 @@ if type brew &>/dev/null; then
 # FZF
 ##############################################################################
 
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 
 
 ##############################################################################
@@ -45,15 +45,21 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 ##############################################################################
+# zsh-you-should-use_MichaelAquilina
+##############################################################################
+
+source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+
+
+##############################################################################
 # zsh-nvm
 ##############################################################################
 
-if [ -d '/Users/manny/.local/share/fig/plugins/zsh-nvm' ]; then
-NVM_COMPLETION="true"
-NVM_LAZY_LOAD="true"
-NVM_AUTO_USE="true"
-source '/Users/manny/.local/share/fig/plugins/zsh-nvm/zsh-nvm.plugin.zsh'
-fi
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+export NVM_NO_USE=true
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
 
 ##############################################################################
 # zsh-colored-man-pages_ael-code
@@ -78,14 +84,7 @@ if [ -d '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh' ]; then
 source '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh/colorize.plugin.zsh'
 fi
 
-##############################################################################
-# zsh-you-should-use_MichaelAquilina
-##############################################################################
 
-if [ -d '/Users/manny/.local/share/fig/plugins/zsh-you-should-use_MichaelAquilina' ]; then
-
-source '/Users/manny/.local/share/fig/plugins/zsh-you-should-use_MichaelAquilina/you-should-use.plugin.zsh'
-fi
 
 ##############################################################################
 # zsh-command-not-found_Tarrasch
@@ -112,13 +111,8 @@ fi
 
 
 ##############################################################################
-# zsh-aliases-exa_DarrinTisdale
+# eza
 
-if [ -d '/Users/manny/.local/share/fig/plugins/zsh-aliases-exa_DarrinTisdale' ]; then
-source '/Users/manny/.local/share/fig/plugins/zsh-aliases-exa_DarrinTisdale/zsh-aliases-exa.plugin.zsh'
-fi
-
-COLUMNS="80"
 alias -- l='eza --icons --color=always --group-directories-first'
 alias -- ls='eza -F --icons --color=always --group-directories-first'
 alias -- ll='eza -alF --icons --color=always --group-directories-first'
@@ -179,6 +173,10 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+##############################################################################
+# zoxide
+##############################################################################
+eval "$(zoxide init zsh)"
 
 ##############################################################################
 function configunlink() {

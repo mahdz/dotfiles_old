@@ -1,9 +1,9 @@
 module.exports = {
   brew: [
-    //Moved to Brewfile
+    // Moved to ./homedir/.config/brewfile/Brewfile
   ],
   cask: [
-    //Moved to Brewfile
+    // Moved to ./homedir/.config/brewfile/Brewfile
   ],
   gem: [],
   npm: [
@@ -20,6 +20,6 @@ module.exports = {
     // ,'yo'
   ],
   mas: [
-    //Moved to Brewfile
+    // Moved to ./homedir/.config/brewfile/Brewfile
   ],
 };

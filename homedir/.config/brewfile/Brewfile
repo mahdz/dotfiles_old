@@ -17,7 +17,6 @@ brew c-ares
 brew ca-certificates
 brew cairo
 brew certifi
-brew chruby
 brew cjson
 brew cmake
 brew coreutils
@@ -144,7 +143,6 @@ brew readline
 brew reattach-to-user-namespace
 brew rsync
 brew rubberband
-brew ruby-install
 brew sdl2
 brew sdl2_ttf
 brew shared-mime-info
@@ -160,7 +158,6 @@ brew tcl-tk
 brew tesseract
 brew theora
 brew tldr
-brew tmux
 brew unbound
 brew utf8proc
 brew webp
@@ -174,10 +171,12 @@ brew yt-dlp
 brew zeromq
 brew zimg
 brew zlib
+brew zoxide
 brew zsh
 brew zsh-autosuggestions
 brew zsh-completions
 brew zsh-syntax-highlighting
+brew zsh-you-should-use
 brew zstd
 
 tap homebrew/cask
@@ -256,6 +255,7 @@ appstore 1290358394 Cardhop (2.2.17)
 appstore 1472875808 CardPointers (5.2.3)
 appstore 1441250616 Clean Email (3.0.32)
 appstore 1447330651 Copilot (4.1.1)
+appstore 1024640650 CotEditor (4.8.5)
 appstore 953286746 Darkroom (6.7.10)
 appstore 6443923358 Detail Studio (4.13.12)
 appstore 975937182 Fantastical (3.8.16)
@@ -272,9 +272,9 @@ appstore 1440405750 MusicHarbor (4.8.2)
 appstore 905953485 NordVPN (8.20.0)
 appstore 409201541 Pages (14.0)
 appstore 1472777122 PayPal Honey (16.5.1)
-appstore 1444636541 Photomator (3.3.14)
+appstore 1444636541 Photomator (3.3.15)
 appstore 1160374471 PiPifier (1.3.1)
-appstore 1289583905 Pixelmator Pro (3.6.1)
+appstore 1289583905 Pixelmator Pro (3.6.2)
 appstore 1459275972 Playlisty for Apple Music (3.14)
 appstore 1344679160 Scrobbles for Last.fm (9.3.3)
 appstore 1522267256 Shareful (1.10.1)
