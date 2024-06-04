@@ -40,6 +40,7 @@ brew giflib
 brew gifsicle
 brew git
 brew glib
+brew glow
 brew gmp
 brew gnutls
 brew gobject-introspection
@@ -55,6 +56,7 @@ brew jasper
 brew jbig2dec
 brew jpeg-turbo
 brew jpeg-xl
+brew jq
 brew jsoncpp
 brew lame
 brew leptonica
@@ -109,7 +111,6 @@ brew lz4
 brew lzo
 brew m4
 brew mackup
-brew macos-trash
 brew mas
 brew mbedtls
 brew mpdecimal
@@ -163,6 +164,7 @@ brew utf8proc
 brew webp
 brew x264
 brew x265
+brew xdg-ninja
 brew xorgproto
 brew xvid
 brew xxhash
@@ -238,6 +240,9 @@ cask pearcleaner
 
 tap buo/cask-upgrade
 
+tap doron-cohen/tap
+brew antidot
+
 tap eth-p/software
 
 tap isacikgoz/taps
@@ -279,5 +284,5 @@ appstore 1459275972 Playlisty for Apple Music (3.14)
 appstore 1344679160 Scrobbles for Last.fm (9.3.3)
 appstore 1522267256 Shareful (1.10.1)
 appstore 1594183810 Shortery (5.5)
-appstore 1607635845 Velja (2.0.3)
+appstore 1607635845 Velja (2.0.4)
 appstore 899972312 WordService (2.8.3)
