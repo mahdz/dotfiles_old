@@ -7,8 +7,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 #█▓▒░ clean home
 export XDG_CONFIG_HOME="$HOME"/.config
-#export NAVE_DIR="$HOME"/.local/lib/nodejs
-#export GOPATH="$HOME"/.local/lib/go
+export NAVE_DIR="$HOME"/.local/lib/nodejs
+export GOPATH="$HOME"/.local/lib/go
 export XDG_DATA_HOME="$HOME"/.local/share
 export XDG_CACHE_HOME="$HOME"/.local/cache
 export XDG_STATE_HOME="$HOME"/.local/state

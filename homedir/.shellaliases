@@ -26,7 +26,7 @@ alias -- stfu='osascript -e '"'"'set volume output muted true'"'"''
 # Homebrew
 alias brewa='brew autoremove'
 alias brewc='brew cleanup'
-alias brewC='brew cleanup -s'
+alias brewC='brew cleanup -s --prune=all'
 alias brewd='brew doctor --verbose'
 alias brewe='brew edit --formula'
 alias brewi='brew info --formula'

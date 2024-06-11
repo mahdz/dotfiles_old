@@ -17,16 +17,6 @@
 #eval "$(pyenv init -)"
 #PYENV_ROOT="$HOME/.pyenv"=
 
-##############################################################################
-# zsh-completions
-##############################################################################
-
-if type brew &>/dev/null; then
-          FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-          autoload -Uz compinit
-          compinit
-        fi
 
 
 ##############################################################################
@@ -40,7 +30,7 @@ source <(fzf --zsh)
 # zsh-autosuggestions
 ##############################################################################
 ZSH_AUTOSUGGEST_STRATEGY=(completion match_prev_cmd)
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 ##############################################################################
@@ -136,11 +126,11 @@ alias -- la='eza -a --icons --color=always --group-directories-first'
 # zsh-syntax-highlighting
 ##############################################################################
 
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 ##############################################################################
-# Brewfile
+# Brewfile & Completions
 ##############################################################################
 
 HOMEBREW_BREWFILE_APPSTORE="2"
@@ -154,9 +144,10 @@ done
 autoload -U compinit
 compinit
 
+
 # Brew-wrap
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
+if [ -f $HOMEBREW_PREFIX/etc/brew-wrap ];then
+  source $HOMEBREW_PREFIX/etc/brew-wrap
 
   _post_brewfile_update () {
      echo "Brewfile was updated!"
