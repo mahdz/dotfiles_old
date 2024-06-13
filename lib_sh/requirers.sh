@@ -86,13 +86,13 @@ function require_npm() {
 }
 
 function sourceNVM(){
-    export NVM_DIR="$XDG_CONFIG_HOME"/nvm
+    export NVM_DIR="$XDG_CONFIG_HOME/nvm"
     source $XDG_CONFIG_HOME/nvm/nvm.sh
 }
 
 function require_nvm() {
-    mkdir -p $XDG_CONFIG_HOME/nvm
-    cp $HOME/.nvm/nvm-exec ~/.nvm/
+    mkdir -p "$XDG_CONFIG_HOME/nvm"
+    cp $XDG_CONFIG_HOME/nvm/nvm-exec $XDG_CONFIG_HOME/nvm/
     sourceNVM
     nvm install $1
     if [[ $? != 0 ]]; then

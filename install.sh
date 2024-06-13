@@ -209,6 +209,10 @@ brew doctor
 #  git clone https://github.com/bhilburn/powerlevel9k.git oh-my-zsh/custom/themes/powerlevel9k
 #fi
 
+#if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel9k" ]]; then
+#  git clone https://github.com/bhilburn/powerlevel9k.git oh-my-zsh/custom/themes/powerlevel9k
+#fi
+
 bot "Dotfiles Setup"
 read -r -p "symlink ./homedir/* files in ~/ (these are the dotfiles)? [y|N] " response
 if [[ $response =~ (y|yes|Y) ]]; then
@@ -237,23 +241,36 @@ if [[ $response =~ (y|yes|Y) ]]; then
   popd > /dev/null 2>&1
 fi
 
+#bot "VIM Setup"
+#read -r -p "Do you want to install vim plugins now? [y|N] " response
+#if [[ $response =~ (y|yes|Y) ]];then
+#  bot "Installing vim plugins"
+  # cmake is required to compile vim bundle YouCompleteMe
+  # require_brew cmake
+#  vim +PluginInstall +qall > /dev/null 2>&1
+#  ok
+#else
+#  ok "skipped. Install by running :PluginInstall within vim"
+#fi
+
+
 read -r -p "Install fonts? [y|N] " response
 if [[ $response =~ (y|yes|Y) ]];then
   bot "installing fonts"
   # need fontconfig to install/build fonts
   require_brew fontconfig
   ./fonts/install.sh
-  #brew tap homebrew/cask-fonts
-  #require_brew svn #required for roboto
-  #require_cask font-barlow
-  #require_cask font-barlow-condensed
-  #require_cask font-barlow-semi-condensed
-  #require_cask font-fira-code
-  #require_cask font-fira-code-nerd-font
-  #require_cask font-fira-mono-nerd-font
-  #require_cask font-fira-sans
-  #require_cask font-fira-sans-extra-condensed
-  #require_cask font-new-york
+  brew tap homebrew/cask-fonts
+  require_brew svn #required for roboto
+  require_cask font-barlow
+  require_cask font-barlow-condensed
+  require_cask font-barlow-semi-condensed
+  require_cask font-fira-code
+  require_cask font-fira-code-nerd-font
+  require_cask font-fira-mono-nerd-font
+  require_cask font-fira-sans
+  require_cask font-fira-sans-extra-condensed
+  require_cask font-new-york
   ok
 fi
 
