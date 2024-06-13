@@ -41,7 +41,7 @@ LESSHISTFILE="$XDG_STATE_HOME"/less/history
 
 export NVM_DIR="$XDG_CONFIG_HOME/nvm"
 export NVM_COMPLETION=true
-# export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD=true
 source ~/.config/.zsh-nvm/zsh-nvm.plugin.zsh
 
 

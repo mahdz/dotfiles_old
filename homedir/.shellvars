@@ -17,6 +17,7 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME"/npm
 #export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
 export SUBVERSION_HOME=$XDG_CONFIG_HOME/subversion
+export TLDR_CACHE_DIR="$XDG_CACHE_HOME"/tldr
 
 
 #########################################################################

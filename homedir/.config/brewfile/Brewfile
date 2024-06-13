@@ -102,6 +102,7 @@ brew libxdmcp
 brew libxext
 brew libxrender
 brew libyaml
+brew libzip
 brew little-cms2
 brew lz4
 brew lzo
