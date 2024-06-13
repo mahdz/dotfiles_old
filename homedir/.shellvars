@@ -1,19 +1,27 @@
-##############################################################################
-# Variables
-##############################################################################
-
-
-################################################
-# Editors
-
+#█▓▒░ Editors
 export EDITOR='nano'
 export VISUAL='nano'
 export PAGER='less'
 
 
-################################################
-# Tool settings
+#█▓▒░ clean home
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_DATA_HOME="$HOME"/.local/share
+export XDG_CACHE_HOME="$HOME"/.local/cache
+export XDG_STATE_HOME="$HOME"/.local/state
+export NAVE_DIR="$HOME"/.local/lib/nodejs
+export GOPATH="$HOME"/.local/lib/go
+#export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:=/tmp}"
+#export ZDOTDIR="$HOME"/.config/zsh
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME"/npm
+#export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
+export SUBVERSION_HOME=$XDG_CONFIG_HOME/subversion
 
+
+#########################################################################
+# Tool settings
+#########################################################################
 export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
 
 

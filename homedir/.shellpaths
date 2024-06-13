@@ -1,11 +1,24 @@
 #My Scripts
-export PATH=$PATH:.
+#export PATH=$PATH:.
 #export PATH=$PATH:~/.dotfiles/scripts
 
 #Brew
-export PATH="/opt/homebrew/bin:$PATH"
-# export PATH=/usr/local/sbin:$PATH
-# export PATH=/usr/local/bin:$PATH
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  # macOS on Apple Silicon
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x /usr/local/bin/brew ]]; then
+  # macOS on x86
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -d /home/linuxbrew/.linuxbrew ]]; then
+  # Linux, system install
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+elif [[ -d "$HOME/.linuxbrew" ]]; then
+  # Linux, user install
+  eval "$("$HOME/.linuxbrew/bin/brew" shellenv)"
+fi
+
+# Homebrew: Python
+export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 
 # GO
 #export PATH=$PATH:/usr/local/opt/go/libexec/bin
@@ -15,3 +28,4 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # The next line enables shell command completion for gcloud.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
+

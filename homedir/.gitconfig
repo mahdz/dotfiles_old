@@ -47,7 +47,7 @@
   safecrlf = warn
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
-	editor = /Applications/Setapp/CodeRunner.app/Contents/MacOS/CodeRunner
+	editor = nano
   #editor = subl -w
 
 [alias]
@@ -165,7 +165,6 @@
 
 [init]
   templatedir = ~/.dotfiles/.git_template
-	defaultBranch = main
 
 [merge]
     tool = vscode
@@ -182,6 +181,7 @@
 
 [credential]
     # cache creds (git help credential-cache)
+  helper = cache
 
 [filter "tabspace"]
   clean = expand -t 4

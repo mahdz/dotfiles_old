@@ -1,4 +1,0 @@
-[submodule "homedir/.tmux"]
-	path = homedir/.tmux
-	url = https://github.com/gpakosz/.tmux.git
-	ignore = dirty

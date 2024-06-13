@@ -86,12 +86,12 @@ function require_npm() {
 }
 
 function sourceNVM(){
-    export NVM_DIR=~/.nvm
-    source $HOME/.nvm/nvm.sh
+    export NVM_DIR="$XDG_CONFIG_HOME"/nvm
+    source $XDG_CONFIG_HOME/nvm/nvm.sh
 }
 
 function require_nvm() {
-    mkdir -p ~/.nvm
+    mkdir -p $XDG_CONFIG_HOME/nvm
     cp $HOME/.nvm/nvm-exec ~/.nvm/
     sourceNVM
     nvm install $1

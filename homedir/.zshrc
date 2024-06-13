@@ -3,20 +3,46 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 ################################################
 
-#source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-#source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-#chruby ruby-3.1.2
+setopt AUTO_CD
+setopt NO_CASE_GLOB
+setopt CORRECT
+setopt CORRECT_ALL
 
+##############################################################################
+# History Configuration
+##############################################################################
+HISTSIZE=5000               #How many lines of history to keep in memory
+HISTFILE=$XDG_STATE_HOME/zsh/.zsh_history     #Where to save history to disk
+SAVEHIST=5000               #Number of history entries to save to disk
+HISTDUP=erase               #Erase duplicates in the history file
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt share_history          # share command history data
+setopt INC_APPEND_HISTORY # adds commands as they are typed, not at shell exit
+
+LESSHISTFILE="$XDG_STATE_HOME"/less/history
 
 ##############################################################################
 # Python
 ##############################################################################
 
-#alias -- python='/opt/homebrew/bin/python3'
+#alias python='/opt/homebrew/bin/python3'
 #command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(pyenv init -)"
 #PYENV_ROOT="$HOME/.pyenv"=
 
+
+##############################################################################
+# zsh-nvm
+##############################################################################
+
+export NVM_DIR="$XDG_CONFIG_HOME/nvm"
+export NVM_COMPLETION=true
+# export NVM_LAZY_LOAD=true
+source ~/.config/.zsh-nvm/zsh-nvm.plugin.zsh
 
 
 ##############################################################################
@@ -27,61 +53,30 @@ source <(fzf --zsh)
 
 
 ##############################################################################
-# zsh-autosuggestions
-##############################################################################
-ZSH_AUTOSUGGEST_STRATEGY=(completion match_prev_cmd)
-source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
-##############################################################################
 # zsh-you-should-use_MichaelAquilina
 ##############################################################################
 
-source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+source $HOMEBREW_PREFIX/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 
-##############################################################################
-# zsh-nvm
-##############################################################################
-
-export NVM_COMPLETION=true
-export NVM_LAZY_LOAD=true
-export NVM_NO_USE=true
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-
-
-##############################################################################
-# zsh-colored-man-pages_ael-code
-##############################################################################
-
-if [ -d '/Users/manny/.local/share/fig/plugins/zsh-colored-man-pages_ael-code' ]; then
-
-source '/Users/manny/.local/share/fig/plugins/zsh-colored-man-pages_ael-code/colored-man-pages.plugin.zsh'
-fi
-
-alias -- ta='t a -t'
-alias -- t='tmux'
-alias -- tls='t ls'
-alias -- tn='t new -t'
 
 ##############################################################################
 # colorize_zpm-zsh
 ##############################################################################
 
-if [ -d '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh' ]; then
-
-source '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh/colorize.plugin.zsh'
-fi
+#if [ -d '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh' ]; then
+#source '/Users/manny/.local/share/fig/plugins/colorize_zpm-zsh/colorize.plugin.zsh'
+#fi
 
 
 
 ##############################################################################
-# zsh-command-not-found_Tarrasch
+# homebrew-command-not-found
 ##############################################################################
 
-if [ -d '/Users/manny/.local/share/fig/plugins/zsh-command-not-found_Tarrasch' ]; then
-
-source '/Users/manny/.local/share/fig/plugins/zsh-command-not-found_Tarrasch/command-not-found.plugin.zsh'
+HB_CNF_HANDLER="$HOMEBREW_PREFIX/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+source "$HB_CNF_HANDLER";
 fi
 
 ##############################################################################
@@ -98,61 +93,114 @@ fi
 #source '/Users/manny/.local/share/fig/plugins/prezto/init.zsh'
 #fi
 
-##############################################################################
-# History Configuration
-##############################################################################
-HISTSIZE=5000               #How many lines of history to keep in memory
-HISTFILE=$XDG_STATE_HOME/zsh/history/.zsh_history     #Where to save history to disk
-SAVEHIST=5000               #Number of history entries to save to disk
-HISTDUP=erase               #Erase duplicates in the history file
 
-setopt    appendhistory     #Append history to the history file (no overwriting)
-setopt    sharehistory      #Share history across terminals
-setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
-
-# $HOME cleanup
-export LESSHISTFILE="$XDG_STATE_HOME"/less/history
 
 ##############################################################################
 # eza
+##############################################################################
 
-alias -- l='eza --icons --color=always --group-directories-first'
-alias -- ls='eza -F --icons --color=always --group-directories-first'
-alias -- ll='eza -alF --icons --color=always --group-directories-first'
-alias -- la='eza -a --icons --color=always --group-directories-first'
+alias l='eza --icons --color=always --group-directories-first'
+alias ls='eza -F --icons --color=always --group-directories-first'
+alias ll='eza -alF --icons --color=always --group-directories-first'
+alias la='eza -a --icons --color=always --group-directories-first'
 
 
 ##############################################################################
-# zsh-syntax-highlighting
+# zsh-autosuggestions
+##############################################################################
+ZSH_AUTOSUGGEST_STRATEGY=(completion match_prev_cmd)
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+
+# ╭─────────────╮
+# │ COMPLETIONS │
+# ╰─────────────╯
+
+# zstyle pattern
+# :completion:<function>:<completer>:<command>:<argument>:<tag>
+
+# load more completions
+if type brew &>/dev/null
+then
+  fpath=(${HOMEBREW_PREFIX}/share/zsh/site-functions $fpath)
+fi
+
+# called before compinit
+zmodload zsh/complist
+
+# register homebrew completions
+if type brew &>/dev/null
+then
+  fpath=(${HOMEBREW_PREFIX}/share/zsh-completions $fpath)
+fi
+
+# load functions and use the cache directory
+autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+# basic completers
+zstyle ':completion:*' completer _extensions _complete _approximate
+
+# turn to cache for commands that use it
+zstyle ':completion:*' use-cache on
+zstyle ':completion::complete:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+# autocomplete options for `cd` instead of directory stack
+zstyle ':completion:*' complete-options true
+
+# sorty by modification date
+zstyle ':completion:*' file-sort modification
+
+# format completion tags
+zstyle ':completion:*:*:*:*:corrections' format '%F{yellow}!- %d (errors: %e) -!%f'
+zstyle ':completion:*:*:*:*:descriptions' format '%F{blue}-- %D %d --%f'
+zstyle ':completion:*:*:*:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:*:*:*:warnings' format ' %F{red}-- no matches found --%f'
+
+# only display some tags for `cd`
+zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
+
+# ordering of groups
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:*:-command-:*:*' group-order aliases builtins functions commands
+
+# keep the prefix when activating autocomplete
+zstyle ':completion:*' keep-prefix true
+
+#zstyle ':completion:*' menu select
+
+
+
+#brew_completion=$(brew --prefix 2>/dev/null)/share/zsh/zsh-site-functions
+#if [ $? -eq 0 ] && [ -d "$brew_completion" ];then
+#  fpath=($brew_completion $fpath)
+#fi
+#autoload -U compinit
+#compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+# for d in "/share/zsh-completions" "/share/zsh/zsh-site-functions";do
+#  brew_completion=$(brew --prefix 2>/dev/null)$d
+#  if [ $? -eq 0 ] && [ -d "$brew_completion" ];then
+#    fpath=($brew_completion $fpath)
+#  fi
+# done
+
+  
+
+##############################################################################
+# Brewfile + Brew Wrap
 ##############################################################################
 
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-##############################################################################
-# Brewfile & Completions
-##############################################################################
-
-HOMEBREW_BREWFILE_APPSTORE="2"
-
-for d in "/share/zsh-completions" "/share/zsh/zsh-site-functions";do
-  brew_completion=$(brew --prefix 2>/dev/null)$d
-  if [ $? -eq 0 ] && [ -d "$brew_completion" ];then
-    fpath=($brew_completion $fpath)
-  fi
-done
-autoload -U compinit
-compinit
-
+export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME"/brewfile/Brewfile
+export HOMEBREW_BREWFILE_APPSTORE="2"
 
 # Brew-wrap
-if [ -f $HOMEBREW_PREFIX/etc/brew-wrap ];then
-  source $HOMEBREW_PREFIX/etc/brew-wrap
+ if [ -f $(brew --prefix)/etc/brew-wrap ];then
+   source $(brew --prefix)/etc/brew-wrap
 
-  _post_brewfile_update () {
+   _post_brewfile_update () {
      echo "Brewfile was updated!"
    }
-
 fi
 
 alias -- brewup='brew update && brew upgrade && brew cu --no-brew-update --interactive --include-mas --cleanup && brew doctor'
@@ -160,27 +208,15 @@ alias -- brewg='brew graph --installed --highlight-leaves | fdp -T png -o graph.
 alias -- bfc='brew file casklist && o Caskfile'
 
 
-##############################################################################
+################################################
+# Paths
+################################################
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# Ensure path arrays do not contain duplicates.
+typeset -gU path fpath
+typeset -U PATH path
 
 
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use &> /dev/null
-  else
-    nvm use stable
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-##############################################################################
-# zoxide
-##############################################################################
-eval "$(zoxide init zsh)"
 
 ##############################################################################
 function configunlink() {
@@ -230,7 +266,8 @@ function configlink() {
 # }
 
 ##############################################################################
-function symlink2() {
+function symlink2() {  
+  bot "creating symlinks for project dotfiles..."
   pushd homedir > /dev/null 2>&1
   now=$(date +"%Y.%m.%d.%H.%M.%S")
 
@@ -249,6 +286,21 @@ function symlink2() {
     unlink ~/$file > /dev/null 2>&1
     # create the link
     ln -s ~/.dotfiles/homedir/$file ~/$file
-    echo -en '\tlinked';
+    echo -en '\tlinked';ok
   done
-}
+
+  popd > /dev/null 2>&1
+  }
+
+##############################################################################
+# zoxide
+##############################################################################
+export _ZO_DATA_DIR=$XDG_DATA_HOME/zoxide
+export FZF_DEFAULT_OPTS='--height 40%'
+eval "$(zoxide init zsh)"
+
+
+##############################################################################
+# zsh-syntax-highlighting
+##############################################################################
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
