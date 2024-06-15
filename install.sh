@@ -164,7 +164,7 @@ if [[ $? != 0 ]]; then
     error "unable to install homebrew, script $0 abort!"
     exit 2
   fi
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/$(whoami)/.zprofile
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/${whoami}/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
   brew analytics off
 else
@@ -188,6 +188,7 @@ mkdir -p ~/Library/Caches/Homebrew/Formula
 brew doctor
 
 # skip those GUI clients, git command-line all the way
+# git is now included with macos terminal
 #require_brew git
 # update zsh to latest
 #require_brew zsh
@@ -196,14 +197,14 @@ brew doctor
 #RUBY_CONFIGURE_OPTS="--with-openssl-dir=`brew --prefix openssl` --with-readline-dir=`brew --prefix readline` --with-libyaml-dir=`brew --prefix libyaml`"
 #require_brew ruby
 # set zsh as the user login shell
-#CURRENTSHELL=$(dscl . -read /Users/$USER UserShell | awk '{print $2}')
-#if [[ "$CURRENTSHELL" != "/bin/zsh" ]]; then
-#  bot "setting newer homebrew zsh (/bin/zsh) as your shell (password required)"
-#  # sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
-#  # chsh -s /usr/local/bin/zsh
-#  sudo dscl . -change /Users/$USER UserShell $SHELL /bin/zsh > /dev/null 2>&1
-#  ok
-#fi
+# CURRENTSHELL=$(dscl . -read /Users/$USER UserShell | awk '{print $2}')
+# if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
+#   bot "setting newer homebrew zsh (/usr/local/bin/zsh) as your shell (password required)"
+#   # sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+#   # chsh -s /usr/local/bin/zsh
+#   sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
+#   ok
+# fi
 
 #if [[ ! -d "./oh-my-zsh/custom/themes/powerlevel9k" ]]; then
 #  git clone https://github.com/bhilburn/powerlevel9k.git oh-my-zsh/custom/themes/powerlevel9k
@@ -1068,11 +1069,11 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true;ok
 bot "SizeUp.app"
 ###############################################################################
 
-running "Start SizeUp at login"
-defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true;ok
+#running "Start SizeUp at login"
+#defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true;ok
 
-running "Don’t show the preferences window on next start"
-defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false;ok
+#running "Don’t show the preferences window on next start"
+#defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false;ok
 
 killall cfprefsd
 

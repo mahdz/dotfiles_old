@@ -4,4 +4,3 @@
 
 #fpath=($fpath $HOME/.zsh/func)
 #typeset -U path fpath
-

@@ -6,15 +6,15 @@
 setopt AUTO_CD
 setopt NO_CASE_GLOB
 setopt CORRECT
-setopt CORRECT_ALL
 
 ##############################################################################
 # History Configuration
 ##############################################################################
 HISTSIZE=5000               #How many lines of history to keep in memory
-HISTFILE=$XDG_STATE_HOME/zsh/.zsh_history     #Where to save history to disk
+HISTFILE="${XDG_STATE_HOME:-${HOME}/.local/state}/zsh/.zsh_history"     #Where to save history to disk
 SAVEHIST=5000               #Number of history entries to save to disk
 HISTDUP=erase               #Erase duplicates in the history file
+
 setopt extended_history       # record timestamp of command in HISTFILE
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_ignore_dups       # ignore duplicated commands history list
@@ -23,7 +23,7 @@ setopt hist_verify            # show command with history expansion to user befo
 setopt share_history          # share command history data
 setopt INC_APPEND_HISTORY # adds commands as they are typed, not at shell exit
 
-LESSHISTFILE="$XDG_STATE_HOME"/less/history
+
 
 ##############################################################################
 # Python
@@ -136,14 +136,26 @@ then
 fi
 
 # load functions and use the cache directory
-autoload -Uz compinit && compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+ZSH_COMPDUMP="${XDG_CACHE_HOME:-${HOME}/.cache}/zsh/zcompcache"
+ 
+# Create the parent directory if it doesn't exist
+[[ -d $ZSH_COMPDUMP ]] || mkdir -p $ZSH_COMPDUMP
+
+_comp_files=($ZSH_COMPDUMP/zcompdump(Nm-20))
+if (( $#_comp_files )); then
+    #autoload -Uz compinit -C -d "$ZSH_COMPDUMP/.zcompdump-${ZSH_VERSION}"
+    autoload -Uz compinit && compinit -d "$ZSH_COMPDUMP/.zcompdump-${ZSH_VERSION}"
+else
+    #autoload -Uz compinit -d "$ZSH_COMPDUMP/.zcompdump-${ZSH_VERSION}"
+    autoload -Uz compinit && compinit -d "$ZSH_COMPDUMP/.zcompdump-${ZSH_VERSION}"
+fi
 
 # basic completers
 zstyle ':completion:*' completer _extensions _complete _approximate
 
 # turn to cache for commands that use it
 zstyle ':completion:*' use-cache on
-zstyle ':completion::complete:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+zstyle ':completion::complete:*' cache-path "$ZSH_COMPDUMP"
 
 # autocomplete options for `cd` instead of directory stack
 zstyle ':completion:*' complete-options true
@@ -191,9 +203,6 @@ zstyle ':completion:*' keep-prefix true
 # Brewfile + Brew Wrap
 ##############################################################################
 
-export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME"/brewfile/Brewfile
-export HOMEBREW_BREWFILE_APPSTORE="2"
-
 # Brew-wrap
  if [ -f $(brew --prefix)/etc/brew-wrap ];then
    source $(brew --prefix)/etc/brew-wrap
@@ -202,10 +211,6 @@ export HOMEBREW_BREWFILE_APPSTORE="2"
      echo "Brewfile was updated!"
    }
 fi
-
-alias -- brewup='brew update && brew upgrade && brew cu --no-brew-update --interactive --include-mas --cleanup && brew doctor'
-alias -- brewg='brew graph --installed --highlight-leaves | fdp -T png -o graph.png && open graph.png'
-alias -- bfc='brew file casklist && o Caskfile'
 
 
 ################################################

@@ -111,3 +111,7 @@ alias brewu='brew update'
 alias brewU='brew upgrade --formula'
 alias brewx='brew uninstall --formula'
 alias brewX='brew uninstall --formula --force'
+
+alias brewup='brew update && brew upgrade && brew cu --no-brew-update --interactive --include-mas --cleanup && brew doctor'
+alias brewg='brew graph --installed --highlight-leaves | fdp -T png -o graph.png && open graph.png'
+alias bfc='brew file casklist && o Caskfile'

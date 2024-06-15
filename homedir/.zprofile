@@ -8,7 +8,7 @@
 ##############################################################################
 source ~/.profile
 
+export SHELL_SESSIONS_DISABLE=1
 
-
-export SHELL_SESSION_DIR=$XDG_STATE_HOME/zsh/sessions
-export SHELL_SESSION_FILE=$SHELL_SESSION_DIR/$TERM_SESSION_ID
+#export SHELL_SESSION_DIR=$XDG_STATE_HOME/zsh/sessions
+#export SHELL_SESSION_FILE=$SHELL_SESSION_DIR/$TERM_SESSION_ID

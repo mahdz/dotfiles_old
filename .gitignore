@@ -18,3 +18,5 @@ homedir/.vim/bundle/*
 !homedir/.vim/bundle/.gitignore
 !homedir/.vim/bundle/Vundle.vim
 homedir/.config/raycast/
+homedir/.config/.zsh-nvm/
+homedir/.config/nvm/

@@ -9,9 +9,9 @@ brew autoconf
 brew automake
 brew bat
 brew bison
+brew blueutil
 brew brightness
 brew brotli
-brew c-ares
 brew ca-certificates
 brew cairo
 brew certifi
@@ -102,7 +102,6 @@ brew libxdmcp
 brew libxext
 brew libxrender
 brew libyaml
-brew libzip
 brew little-cms2
 brew lz4
 brew lzo
@@ -130,7 +129,6 @@ brew pixman
 brew pkg-config
 brew popt
 brew portaudio
-brew prettier
 brew protobuf
 brew python@3.10
 brew python@3.12
@@ -151,9 +149,9 @@ brew sqlite
 brew srt
 brew svt-av1
 brew tcl-tk
+brew tealdeer
 brew tesseract
 brew theora
-brew tldr
 brew unbound
 brew webp
 brew x264
@@ -182,6 +180,7 @@ cask betterdisplay
 cask camo-studio
 cask cheatsheet
 cask cirrus
+cask codeedit
 cask customshortcuts
 cask discord
 cask etrecheckpro
@@ -202,6 +201,7 @@ cask github
 cask grammarly-desktop
 cask iina
 cask iterm2
+cask jordanbaird-ice
 cask jump-desktop-connect
 cask karabiner-elements
 cask macfuse

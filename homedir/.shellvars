@@ -1,29 +1,62 @@
-#█▓▒░ Editors
+# +---------+
+# | EDITORS |
+# +---------+
+
 export EDITOR='nano'
 export VISUAL='nano'
 export PAGER='less'
 
 
-#█▓▒░ clean home
-export XDG_CONFIG_HOME="$HOME"/.config
-export XDG_DATA_HOME="$HOME"/.local/share
-export XDG_CACHE_HOME="$HOME"/.local/cache
-export XDG_STATE_HOME="$HOME"/.local/state
-export NAVE_DIR="$HOME"/.local/lib/nodejs
-export GOPATH="$HOME"/.local/lib/go
-#export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:=/tmp}"
+# +-------+
+# |  XDG  |
+# +-------+
+
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.local/cache}
+export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
+export XDG_STATE_HOME=${XDG_STATE_HOME:-$HOME/.local/state}
+export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-$HOME/.local/run}
+
 #export ZDOTDIR="$HOME"/.config/zsh
+
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME"/npm
-#export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
-export SUBVERSION_HOME=$XDG_CONFIG_HOME/subversion
-export TLDR_CACHE_DIR="$XDG_CACHE_HOME"/tldr
+
+
+# +------+
+# | BREW |
+# +------+
+
+export HOMEBREW_BUNDLE_FILE="$XDG_CONFIG_HOME"/brewfile/Brewfile
+export HOMEBREW_NO_AUTO_UPDATE="1"
+export HOMEBREW_BREWFILE_APPSTORE="2"
+export HOMEBREW_CLEANUP_MAX_AGE_DAYS='7'
+
+
+# +-------+
+# | OTHER |
+# +-------+
+
+#export GOPATH="$HOME"/.local/lib/go
+
+#if hash tldr 2>/dev/null; then
+	export TEALDEER_CONFIG_DIR="$XDG_CONFIG_HOME"/tldr
+	export TLDR_CACHE_DIR="$XDG_CACHE_HOME"/tldr
+#fi
+
+export SCREENRC="$XDG_CONFIG_HOME"/screen/screenrc
+export LESSHISTFILE="$XDG_STATE_HOME"/less/history
+export _ZO_DATA_DIR="$XDG_SHARE_HOME"/zoxide
 
 
 #########################################################################
 # Tool settings
 #########################################################################
 export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
+
+export _ZO_ECHO='1'
+export _ZO_RESOLVE_SYMLINKS='1'
+
 
 
 ################################################
